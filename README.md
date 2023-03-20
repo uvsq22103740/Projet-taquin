@@ -12,8 +12,8 @@ Lily : On utilise la méthode init qui est une fonction qui permet d'initialiser
 Léa : Nous rajoutons le titre du jeu nommé " Jeu du taquin " grace a la fonction title puis nous créeons une grille grace a la fonction "grid" et on lui donne une largeur de 5 et les reliefs.
 
 
-
-
-Lily : On crée un quadrillage 4x4
+Léa : On a ensuite crée une variable " ligne " vide que nous allons par la suite remplir.
 
 Alexandre: On ajoute sur la ligne 14 une variable permettant de créer les cases vides dans lesquelles nous pourrons stocker les informations du jeu dans le futur.
+
+Lily : On crée un quadrillage 4x4

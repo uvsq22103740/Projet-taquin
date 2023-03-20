@@ -11,9 +11,12 @@ class Taquin:
         """ Création de la grille"""
         T.grid.pack()
         """permet de placer le cadre T.grid dans la fenêtre principale de jeu."""
-
+      
 racine = tk.Tk()
 """Création de la fenêtre racine"""
+racine.configure(bg="saddle brown")
+"""On donne la couleur marron a notre arrière plan"""
 jeu = Taquin(racine)
+"""Création de la variable jeu"""
 racine.mainloop()
 """Lancement de la boucle principale"""

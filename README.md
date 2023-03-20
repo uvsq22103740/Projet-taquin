@@ -22,3 +22,5 @@ Léa : On a ensuite crée une variable " ligne " vide que nous allons par la sui
 Alexandre: On ajoute sur la ligne 14 une variable permettant de créer les cases vides dans lesquelles nous pourrons stocker les informations du jeu dans le futur.
 
 Lily : On crée un quadrillage 4x4
+
+Alexandre: Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les informations du jeu par la suite

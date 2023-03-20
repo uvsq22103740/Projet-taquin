@@ -16,6 +16,7 @@ class Taquin:
         for i in range(4):
             """Création d'une ligne de 4"""
             ligne = []
+            """ on crée la variable "ligne" vide qui sera ensuite remplie"""
 racine = tk.Tk()
 """Création de la fenêtre racine"""
 racine.configure(bg="saddle brown")

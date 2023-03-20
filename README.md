@@ -14,6 +14,6 @@ Léa : Nous rajoutons le titre du jeu nommé " Jeu du taquin " grace a la foncti
 
 
 
-
+Lily : On crée un quadrillage 4x4
 
 Alexandre: On ajoute sur la ligne 14 une variable permettant de créer les cases vides dans lesquelles nous pourrons stocker les informations du jeu dans le futur.

@@ -11,7 +11,8 @@ class Taquin:
         """ Création de la grille"""
         T.grid.pack()
         """permet de placer le cadre T.grid dans la fenêtre principale de jeu."""
-      
+        T.bouton = []
+        """Création des cases vides"""      
 racine = tk.Tk()
 """Création de la fenêtre racine"""
 racine.configure(bg="saddle brown")

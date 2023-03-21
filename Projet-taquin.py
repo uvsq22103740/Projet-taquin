@@ -34,4 +34,4 @@ racine.configure(bg="saddle brown")
 jeu = Taquin(racine)
 """Création de la variable jeu"""
 racine.mainloop()
-"""Lancement de la boucle principale"""
+"""Lancement de la boucle principale du jeu"""

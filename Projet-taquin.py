@@ -12,7 +12,7 @@ class Taquin:
         T.grid.pack()
         """permet de placer le cadre T.grid dans la fenêtre principale de jeu."""
         T.bouton = []
-        """Création des cases vides"""   
+        """Création d'une variable pour des cases vides"""   
         for i in range(4):
             """Création d'une ligne de 4"""
             ligne = []

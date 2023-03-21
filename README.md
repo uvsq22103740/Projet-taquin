@@ -17,6 +17,9 @@ Lily : On utilise la méthode init qui est une fonction qui permet d'initialiser
 
 Léa : Nous rajoutons le titre du jeu nommé " Jeu du taquin " grace a la fonction title puis nous créeons une grille grace a la fonction "grid" et on lui donne une largeur de 5 et les reliefs.
 
+Ange : ligne 10 on utilise tk.Frame pour crée un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie.
+On apelle en paramètre jeu, pour que le titre du jeu apparaise, "bd" et on donne la largeur de la bordure = 5 pixels ainsi qu'un relief style "raised" pour donner une impression de profondeur, ce qui est plus réaliste!
+
 Léa : On a ensuite crée une variable " ligne " vide que nous allons par la suite remplir.
 
 Alexandre: On ajoute sur la ligne 14 une variable permettant de créer les cases vides dans lesquelles nous pourrons stocker les informations du jeu dans le futur.

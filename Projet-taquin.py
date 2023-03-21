@@ -28,7 +28,7 @@ class Taquin:
             T.bouton.append(ligne)
             """Permet d'affilier ces boutons sur toutes les lignes du 4x4"""
 racine = tk.Tk()
-"""Création de la fenêtre racine"""
+"""Création de la fenêtre racine avec tkinter"""
 racine.configure(bg="saddle brown")
 """On donne la couleur marron a notre arrière plan"""
 jeu = Taquin(racine)

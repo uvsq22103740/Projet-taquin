@@ -7,7 +7,7 @@ class Taquin:
         T.jeu = jeu
         jeu.title("Jeu du Taquin")
         """On ajoute le titre Jeu du Taquin"""
-        T.grid = tk.Frame(jeu, borderwidth=5, relief="solid")
+        T.grid = tk.Frame(jeu, borderwidth=10, relief=tk.RAISED)
         """ Création de la grille"""
         T.grid.pack()
         """permet de placer le cadre T.grid dans la fenêtre principale de jeu."""

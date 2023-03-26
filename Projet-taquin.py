@@ -1,4 +1,6 @@
 import tkinter as tk
+from tkinter import messagebox
+
 """importation de la bibliothèque tkinter"""
 class Taquin:
     """On regroupe les données et des fonctionnalités dans une classe qu'on nomme Taquin"""
@@ -27,6 +29,16 @@ class Taquin:
                 """Ajout des boutons dans le ligne"""
             T.bouton.append(ligne)
             """Permet d'affilier ces boutons sur toutes les lignes du 4x4"""
+            T.apropos_bouton = tk.Button(jeu, text="À propos", command=lambda:T.apropos_bouton_callback())
+            """Création du bouton À propos """
+            T.apropos_bouton.pack(side="bottom")
+            
+    def apropos_bouton_callback(T):
+            """Fonction appelée lorsque le bouton "À propos" est cliqué"""
+            message = "Bienvenue dans le Jeu du Taquin.\n\n" \
+                    "Ce jeu consiste à trouver une combinaison.\n\n" \
+                    "Un carré ne peut coulisser que si l’emplacement voisin dans la direction choisie est vide."
+            tk.messagebox.showinfo("À propos", message)
 racine = tk.Tk()
 """Création de la fenêtre racine avec bibliothèque tkinter"""
 racine.configure(bg="saddle brown")

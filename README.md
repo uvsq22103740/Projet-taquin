@@ -27,3 +27,6 @@ Alexandre: On ajoute sur la ligne 14 une variable permettant de créer les cases
 Lily : On crée un quadrillage 4x4
 
 Alexandre: Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les informations du jeu par la suite
+
+Ange : Création du bouton à propos avec messagbox et fonction apropos_bouton_callback qui est appelée lorsque le bouton à propos est cliqué
+Ce bouton une fois cliqué, affiche un message informatif sur le jeu pour que le joueur comprenne ce qu'il doit faire.

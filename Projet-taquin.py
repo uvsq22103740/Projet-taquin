@@ -37,7 +37,7 @@ class Taquin:
             """Fonction appelée lorsque le bouton "À propos" est cliqué"""
             message = "Bienvenue dans le Jeu du Taquin.\n\n" \
                     "Ce jeu consiste à trouver une combinaison.\n\n" \
-                    "Un carré ne peut coulisser que si l’emplacement voisin dans la direction choisie est vide."
+                    "Vous pouvez configurer le nombre de tentatives que vous pouvez effectuer dans le menu Préférences."
             tk.messagebox.showinfo("À propos", message)
 racine = tk.Tk()
 """Création de la fenêtre racine avec bibliothèque tkinter"""

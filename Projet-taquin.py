@@ -37,11 +37,12 @@ class Taquin:
             """Fonction appelée lorsque le bouton "À propos" est cliqué"""
             message = "Bienvenue dans le Jeu du Taquin.\n\n" \
                     "Ce jeu consiste à trouver une combinaison.\n\n" \
-                    "Vous pouvez configurer le nombre de tentatives que vous pouvez effectuer dans le menu Préférences."
+                    "C'est un puzzle constitué de 15 carrés numérotés de 1 à 15 qui peuvent coulisser horizontalement et verticalement à l’intérieur d’un cadre carré qui contient un emplacement vide"
             tk.messagebox.showinfo("À propos", message)
+            """message descriptif informatif"""
 racine = tk.Tk()
 """Création de la fenêtre racine avec bibliothèque tkinter"""
-racine.configure(bg="saddle brown")
+racine.configure(bg="orange red")
 """On donne la couleur marron a notre arrière plan"""
 jeu = Taquin(racine)
 """Création de la variable jeu"""

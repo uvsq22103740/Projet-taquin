@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
+import random as rd
 
 """importation de la bibliothèque tkinter"""
 class Taquin:
@@ -32,16 +33,34 @@ class Taquin:
             T.apropos_bouton = tk.Button(jeu, text="À propos", command=lambda:T.apropos_bouton_callback())
             """Création du bouton À propos """
             T.apropos_bouton.pack(side="bottom")
+        T.tableau = T.tableau_taquin()
             
     def apropos_bouton_callback(T):
             """Fonction appelée lorsque le bouton "À propos" est cliqué"""
             message = "Bienvenue dans le Jeu du Taquin.\n\n" \
                     "Ce jeu consiste à trouver une combinaison.\n\n" \
-                    "Vous pouvez configurer le nombre de tentatives que vous pouvez effectuer dans le menu Préférences."
+                    "Bonne chance!"
             tk.messagebox.showinfo("À propos", message)
+
+    def tableau_taquin(T):
+        """création du tableau du taquin : va prendre aléatoirement un nombre entre 1 et 16"""
+        nombre=list(range(1, 16))
+        rd.shuffle(nombre)
+        tableau=[]
+        """on créer la variable vide tableau pour y rajouter """
+        nombre.append(None)
+        for o in range(0, len(nombre), 4):
+            """On parcourt de 4 en 4 le nombre d'élément de nombre"""
+            ligne = nombre[o:o+4]
+            """On attribut à une ligne un nombre 4 fois car une ligne est composée de 4 cases"""
+            tableau.append(ligne)
+        T.renouvel_tableau(tableau)#on crera demain la fonction renouvel tableau pour mettre les chiffre dans les cases
+        return tableau
+        """retourne le tableau de la fonction"""
+        
 racine = tk.Tk()
 """Création de la fenêtre racine avec bibliothèque tkinter"""
-racine.configure(bg="saddle brown")
+racine.configure(bg="RoyalBlue1")
 """On donne la couleur marron a notre arrière plan"""
 jeu = Taquin(racine)
 """Création de la variable jeu"""

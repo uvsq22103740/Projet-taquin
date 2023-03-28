@@ -30,3 +30,5 @@ Alexandre: Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nou
 
 Ange : Création du bouton à propos avec messagbox et fonction apropos_bouton_callback qui est appelée lorsque le bouton à propos est cliqué
 Ce bouton une fois cliqué, affiche un message informatif sur le jeu pour que le joueur comprenne ce qu'il doit faire.
+
+Ange: Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin

@@ -49,15 +49,26 @@ class Taquin:
         tableau=[]
         """on créer la variable vide tableau pour y rajouter """
         nombre.append(None)
+        """Ajoute "rien" a la fin de la liste, le dernier élément est vide"""
         for o in range(0, len(nombre), 4):
             """On parcourt de 4 en 4 le nombre d'élément de nombre"""
             ligne = nombre[o:o+4]
             """On attribut à une ligne un nombre 4 fois car une ligne est composée de 4 cases"""
             tableau.append(ligne)
-        T.renouvel_tableau(tableau)#on crera demain la fonction renouvel tableau pour mettre les chiffre dans les cases
+        T.renouvel_tableau(tableau)
         return tableau
         """retourne le tableau de la fonction"""
-        
+
+    def renouvel_tableau(T,tableau):#hier j'ai essayer de push tableau taquin et ici on a sa "fonction complémenatire"
+        for ligne in range(4):
+            for colonne in range(4):
+                nombre = tableau[ligne][colonne]
+                if nombre is None:
+                    T.bouton[ligne][colonne].configure(text="")
+                    """cette case est la case vide, il n'y a pas de nombre dedans"""
+                else:
+                    T.bouton[ligne][colonne].configure(text=str(nombre), font=("Rog fonts",20))
+                    """un nombre par case on ajoute ligne au tableau et on met une police fun de taille 20""" 
 racine = tk.Tk()
 """Création de la fenêtre racine avec bibliothèque tkinter"""
 racine.configure(bg="RoyalBlue1")

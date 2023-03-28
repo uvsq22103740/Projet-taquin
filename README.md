@@ -1,5 +1,6 @@
 # Projet-taquin
 Abstract:
+
 Dans ce projet, on veut programmer le jeu solitaire du taquin.
 Il s’agit d’un puzzle constitué de 15 carrés numérotés de 1 à 15 qui peuvent coulisser horizontalement et verticalement à l’intérieur d’un cadre carré
 qui contient un emplacement vide. Un carré ne peut coulisser que si l’emplacement voisin dans la direction choisie est vide.
@@ -26,9 +27,13 @@ Alexandre: On ajoute sur la ligne 14 une variable permettant de créer les cases
 
 Lily : On crée un quadrillage 4x4
 
-Alexandre: Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les informations du jeu par la suite
+Alexandre : Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les informations du jeu par la suite
 
 Ange : Création du bouton à propos avec messagbox et fonction apropos_bouton_callback qui est appelée lorsque le bouton à propos est cliqué
 Ce bouton une fois cliqué, affiche un message informatif sur le jeu pour que le joueur comprenne ce qu'il doit faire.
 
-Ange: Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin
+Ange : Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin
+
+Ange : On veut faire apparaitre les nombres dans le tableau,
+on a créer une fonction complémentaire à tableau_taquin pour cela, la fonction renouvel_tableau qui va mettre dans les cases des nombres format str et dans celle qui a nombre is none, on met un espace "" pour montrer qu'elle est vide
+On donne aussi une Police fun aux nombres pour donner un style à notre jeu!

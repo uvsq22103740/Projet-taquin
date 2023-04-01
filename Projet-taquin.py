@@ -54,6 +54,7 @@ class Taquin:
         """création du tableau du taquin : va prendre aléatoirement un nombre entre 1 et 16"""
         nombre=list(range(1, 16))
         rd.shuffle(nombre)
+        """on utilise la méthode shuffle pour mélanger la liste"""
         tableau=[]
         """on créer la variable vide tableau pour y rajouter """
         nombre.append(None)

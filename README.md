@@ -37,3 +37,5 @@ Ange : Création de la fonction tableau taquin, on va créer ensuite une fonctio
 Ange : On veut faire apparaitre les nombres dans le tableau,
 on a créer une fonction complémentaire à tableau_taquin pour cela, la fonction renouvel_tableau qui va mettre dans les cases des nombres format str et dans celle qui a nombre is none, on met un espace "" pour montrer qu'elle est vide
 On donne aussi une Police fun aux nombres pour donner un style à notre jeu!
+
+On crée une fonction bouge_case qui permetra de bouger les cases, on utilise if elif

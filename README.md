@@ -1,4 +1,9 @@
 # Projet-taquin
+BI TD01
+SAUVAGE Angélique 22103740
+Projet du jeu du Taquin : https://github.com/uvsq22103740/Projet-taquin/blob/master/README.md
+
+
 Abstract:
 
 Dans ce projet, on veut programmer le jeu solitaire du taquin.

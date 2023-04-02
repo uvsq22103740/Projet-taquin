@@ -14,6 +14,7 @@ class Taquin:
         """ Création de la grille"""
         T.grid.pack()
         """permet de placer le cadre T.grid dans la fenêtre principale de jeu."""
+        
         T.bouton = []
         """Création d'une variable pour des cases vides"""   
         for i in range(4):
@@ -22,8 +23,8 @@ class Taquin:
             """ on crée la variable "ligne" vide qui sera ensuite remplie"""
             for j in range(4):
                 """Création des boutons avec lesquels le joueur pourra interagir par l'avenir"""
-                bouton = tk.Button(T.grid, width=8, height=4, font=('ROG Fonts', 20))
-                """Apparition du bouton sur l'interface graphique"""
+                bouton = tk.Button(T.grid, width=8, height=4, font=('ROG Fonts', 20),command=lambda ligne=i, colonne=j: T.bouge_case(ligne, colonne))
+                """Apparition du bouton sur l'interface graphique + on appelle la fonction bouge_case"""
                 bouton.grid(row=i, column=j)
                 """Affiliation des boutons pour les lignes puis les colonnes"""
                 ligne.append(bouton)
@@ -101,6 +102,10 @@ class Taquin:
             T.tableau[ligne][colonne+1], T.tableau[ligne][colonne] = T.tableau[ligne][colonne], T.tableau[ligne][colonne+1]
             T.renouvel_tableau(T.tableau)
 
+    def vérifie_réussite(T):
+        tableau_réussite = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
+        return t.tableau == tableau_réussite
+    
 racine = tk.Tk()
 """Création de la fenêtre racine avec bibliothèque tkinter"""
 racine.configure(bg="RoyalBlue1")

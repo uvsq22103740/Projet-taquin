@@ -2,6 +2,7 @@
 BI TD01
 SAUVAGE Angélique 22103740
 ACCES   Alexandre 22205300
+GALLOIS Léa       22105352
 Projet du jeu du Taquin : https://github.com/uvsq22103740/Projet-taquin/blob/master/README.md
 
 

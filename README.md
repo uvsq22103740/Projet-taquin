@@ -1,8 +1,11 @@
 # Projet-taquin
 BI TD01
+
 SAUVAGE Angélique 22103740
 
 ACCES   Alexandre 22205300
+
+OUK     Lily      22106262
 
 GALLOIS Léa       22105352
 

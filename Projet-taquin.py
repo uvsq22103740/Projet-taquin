@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 import random as rd
+import pickle
 """importation de la bibliothèque tkinter et random"""
 
 class Taquin:

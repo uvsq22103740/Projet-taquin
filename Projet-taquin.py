@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
 import random as rd
+"""importation de la bibliothèque tkinter et random"""
 
-"""importation de la bibliothèque tkinter"""
 class Taquin:
     """On regroupe les données et des fonctionnalités dans une classe qu'on nomme Taquin"""
     def __init__(T, jeu):
@@ -12,9 +12,11 @@ class Taquin:
         """On ajoute le titre Jeu du Taquin"""
         T.grid = tk.Frame(jeu, borderwidth=10, relief=tk.RAISED)
         """ Création de la grille"""
+        T.creation_de_widget(jeu)
         T.grid.pack()
         """permet de placer le cadre T.grid dans la fenêtre principale de jeu."""
-        
+
+    def creation_de_widget(T,jeu):
         T.bouton = []
         """Création d'une variable pour des cases vides"""   
         for i in range(4):
@@ -53,7 +55,8 @@ class Taquin:
 
     def tableau_taquin(T):
         """création du tableau du taquin : va prendre aléatoirement un nombre entre 1 et 16"""
-        nombre=list(range(1, 16))
+        nombre=list(range(1, 16,1))
+        "prend le nombre pioché aleatoirement entre 1 et 16"
         rd.shuffle(nombre)
         """on utilise la méthode shuffle pour mélanger la liste"""
         tableau=[]

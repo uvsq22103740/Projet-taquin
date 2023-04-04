@@ -83,6 +83,14 @@ class Taquin:
                     T.bouton[ligne][colonne].configure(text=str(nombre), font=("Rog fonts",20))
                     """un nombre par case on ajoute ligne au tableau et on met une police fun de taille 20"""
 
+    def vérifie_réussite(T):
+            """vérifie si l'enchainement des nombres du tableau est le schéma correct"""
+            tableau_réussite = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
+            return t.tableau == tableau_réussite
+
+    def message_du_gagnant():
+        """on va définir le message du gagnant"""
+
     def bouge_case(T, ligne, colonne):
         """on veut bouger les cases"""
         if T.tableau[ligne][colonne] is None:
@@ -104,10 +112,9 @@ class Taquin:
             """verifie si la case peut etre bougée vers la DROITE"""
             T.tableau[ligne][colonne+1], T.tableau[ligne][colonne] = T.tableau[ligne][colonne], T.tableau[ligne][colonne+1]
             T.renouvel_tableau(T.tableau)
+        if vérifie_réussite():
+            T.message_du_gagnant()
 
-    def vérifie_réussite(T):
-        tableau_réussite = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
-        return t.tableau == tableau_réussite
     
 racine = tk.Tk()
 """Création de la fenêtre racine avec bibliothèque tkinter"""

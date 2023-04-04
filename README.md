@@ -1,8 +1,11 @@
 # Projet-taquin
 BI TD01
 SAUVAGE Angélique 22103740
+
 ACCES   Alexandre 22205300
+
 GALLOIS Léa       22105352
+
 Projet du jeu du Taquin : https://github.com/uvsq22103740/Projet-taquin/blob/master/README.md
 
 
@@ -46,3 +49,5 @@ on a créer une fonction complémentaire à tableau_taquin pour cela, la fonctio
 On donne aussi une Police fun aux nombres pour donner un style à notre jeu!
 
 On crée une fonction bouge_case qui permetra de bouger les cases, on utilise if elif
+Ange: Quand le joueur aura réaliser le tableau gagnant [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
+On aura un message pour le joueur gagnant qui lui annonce qu'il a gagné

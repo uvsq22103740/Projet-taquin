@@ -11,16 +11,16 @@ GALLOIS Léa       22105352
 
 Projet du jeu du Taquin : https://github.com/uvsq22103740/Projet-taquin/tree/master
 
-*Branche Master*
+_Branche Master_
 
-Abstract:
+*Abstract :
 
 Dans ce projet, on veut programmer le jeu solitaire du taquin.
 Il s’agit d’un puzzle constitué de 15 carrés numérotés de 1 à 15 qui peuvent coulisser horizontalement et verticalement à l’intérieur d’un cadre carré
 qui contient un emplacement vide. Un carré ne peut coulisser que si l’emplacement voisin dans la direction choisie est vide.
 L’objectif est de déplacer les carrés de manière à obtenir la configuration donnée à la figure 1.
 
-Pour cela on utilisera une interface graphique.
+Pour cela on utilisera une interface graphique.*
 
 Léa : on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique
 
@@ -56,3 +56,18 @@ On crée une fonction bouge_case qui permetra de bouger les cases, on utilise if
 
 Ange: Quand le joueur aura réaliser le tableau gagnant [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
 On aura un message pour le joueur gagnant qui lui annonce qu'il a gagné
+
+Ange : Les cases prennent une couleur chacunne : 
+
+1. sauvegarde = Vert
+<img width="74" alt="sauvegarde" src="https://user-images.githubusercontent.com/113627781/230908483-2045a1f9-98f6-4a4f-b00c-e41881e5e751.png">
+
+2. chargement = Noir
+<img width="50" alt="charge" src="https://user-images.githubusercontent.com/113627781/230908501-f13c70f3-0297-419e-b174-9bbaeb8fdb95.png">
+
+3. Annulation = Rouge orangé
+<img width="49" alt="annulation" src="https://user-images.githubusercontent.com/113627781/230908540-ba57ae6b-9774-4ed8-a499-44dba52c8e65.png">
+
+Le bouton AIDE est mis sous une forme plus pertinente pour le joueur :
+
+<img width="97" alt="sigle" src="https://user-images.githubusercontent.com/113627781/230907726-7a2aac9f-c813-49ee-8242-4d0d6db5b4d9.png">

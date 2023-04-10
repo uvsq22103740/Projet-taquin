@@ -39,10 +39,19 @@ class Taquin:
         T.Aide = tk.Button(jeu, text="Aide",fg="RoyalBlue1",font=('ROG Fonts', 8), command=lambda:T.Aide_callback())
         """Création du bouton AIDE """
         T.Aide.pack(side="bottom")
-        T.Sauvegarde = tk.Button(jeu, text="Sauvegarder",fg="orange red",font=('ROG Fonts', 10), command=lambda:T.Sauvegarde_callback())
+        T.Sauvegarde = tk.Button(jeu, text="Sauvegarder",bg="green3",font=('ROG Fonts', 10), command=lambda:T.Sauvegarde_callback())
         """Création du bouton SAUVEGARDER """
         T.Sauvegarde.pack(side="bottom")
         T.tableau = T.tableau_taquin()
+        
+        bouton_chargement = tk.Button(racine, text="Charger",bg="grey13", fg="light cyan",font=("Rog fonts",7))
+        bouton_chargement.pack(side="bottom")
+        """Création bouton pour charger le jeu"""
+
+        bouton_annulation = tk.Button(racine, text="Annuler",bg="orange red", font=("Rog fonts",7))
+        bouton_annulation.pack(side="bottom")
+        """Création bouton pour annuler le dernier mouvement"""
+
     
     def Aide_callback(T):
             """Fonction appelée lorsque le bouton "Aide" est cliqué"""

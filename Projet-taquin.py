@@ -1,8 +1,10 @@
 import tkinter as tk
+"""Importer le module tkinter, appelé "tk" """
 from tkinter import messagebox
 import random as rd
+"""Importer le module random pour générer le plateau aléatoirement"""
 import pickle
-"""importation de la bibliothèque tkinter et random"""
+"""Importer le module pickle pour sauvegarder et charger le plateau"""
 
 class Taquin:
     """On regroupe les données et des fonctionnalités dans une classe qu'on nomme Taquin"""
@@ -26,7 +28,7 @@ class Taquin:
             """ on crée la variable "ligne" vide qui sera ensuite remplie"""
             for j in range(4):
                 """Création des boutons avec lesquels le joueur pourra interagir par l'avenir"""
-                bouton = tk.Button(T.grid, width=8, height=4, font=('ROG Fonts', 20),command=lambda ligne=i, colonne=j: T.bouge_case(ligne, colonne))
+                bouton = tk.Button(T.grid, width=10, height=8, font=('ROG Fonts', 10),command=lambda ligne=i, colonne=j: T.bouge_case(ligne, colonne))
                 """Apparition du bouton sur l'interface graphique + on appelle la fonction bouge_case"""
                 bouton.grid(row=i, column=j)
                 """Affiliation des boutons pour les lignes puis les colonnes"""
@@ -81,7 +83,7 @@ class Taquin:
                     T.bouton[ligne][colonne].configure(text="")
                     """cette case est la case vide, il n'y a pas de nombre dedans"""
                 else:
-                    T.bouton[ligne][colonne].configure(text=str(nombre), font=("Rog fonts",20))
+                    T.bouton[ligne][colonne].configure(text=str(nombre), font=("Rog fonts",10))
                     """un nombre par case on ajoute ligne au tableau et on met une police fun de taille 20"""
 
     def vérifie_réussite(T):

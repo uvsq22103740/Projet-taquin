@@ -31,7 +31,7 @@ def création_de_widgets():
     bouton_sauvegarde.grid(row=5, column=1)
     """Création bouton pour sauvegarder le jeu avec la commande sauvegarde_du_jeu"""
 
-    bouton_chargement = tk.Button(racine, text="Charger",bg="grey13", fg="light cyan",font=("Rog fonts",7))
+    bouton_chargement = tk.Button(racine, text="Charger",bg="grey13", fg="light cyan",font=("Rog fonts",7),command=lambda:chargement_jeu())
     bouton_chargement.grid(row=5, column=2)
     """Création bouton pour charger le jeu avec la commande chargement_jeu"""
 
@@ -92,6 +92,23 @@ def sauvegarde_du_jeu():
         """Utilisation du module pickle pour sauvegarder"""
     message_SV = "Votre partie est sauvegardée"
     tk.messagebox.showinfo("Sauvegarde", message_SV)
+
+def chargement_jeu():
+    """Charge l'état précédemment sauvegardé du plateau de jeu à partir du fichier binaire save.dat"""
+    try:
+        with open("save.dat", "rb") as svg:
+            global tableau
+            tableau = pickle.load(svg)
+            """Utilisation du module pickle pour charger"""
+            renouvel_tableau(tableau)
+        message_CH = "Votre partie est chargée"
+        tk.messagebox.showinfo("Charge", message_CH)
+    except FileNotFoundError:
+        """Si aucun fichier de sauvegarde n'est trouvé, affiche un message à l'utilisateur."""
+        message_erreur="Aucune sauvegarde trouvée."
+        print("Erreur", message_erreur)
+
+
 
 def vérifie_réussite():
         """vérifie si l'enchainement des nombres du tableau est le schéma correct"""

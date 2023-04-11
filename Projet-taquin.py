@@ -49,10 +49,6 @@ def Aide_callback():
                 "Ce jeu consiste à trouver une combinaison.\n\n" \
                 "Bonne chance!"
         tk.messagebox.showinfo("Aide", message)
-def Sauvegarde_callback():
-            """Fonction appelée lorsque le bouton "Sauvegarder" est cliqué"""
-            message_SV = "Votre partie est sauvegardée"
-            tk.messagebox.showinfo("Sauvegarde", message_SV)
 
 def tableau_taquin():
     """création du tableau du taquin : va prendre aléatoirement un nombre entre 1 et 16"""
@@ -94,6 +90,8 @@ def sauvegarde_du_jeu():
     with open("save.dat", "wb") as svg:
         pickle.dump(tableau, svg)
         """Utilisation du module pickle pour sauvegarder"""
+    message_SV = "Votre partie est sauvegardée"
+    tk.messagebox.showinfo("Sauvegarde", message_SV)
 
 def vérifie_réussite():
         """vérifie si l'enchainement des nombres du tableau est le schéma correct"""

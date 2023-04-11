@@ -25,7 +25,7 @@ qui contient un emplacement vide. Un carré ne peut coulisser que si l’emplace
 L’objectif est de déplacer les carrés de manière à obtenir la configuration donnée à la figure 1.
 Pour cela on utilisera une interface graphique.
 
-[file:///C:/Users/As33/Desktop/L1%20Bi/Info/Le%20projet/taquin.pdf](url)
+[https://ecampus.paris-saclay.fr/pluginfile.php/2075710/mod_resource/content/0/taquin.pdf](url)
 
 Léa : on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique
 

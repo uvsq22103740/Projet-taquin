@@ -13,13 +13,15 @@ Projet du jeu du Taquin : https://github.com/uvsq22103740/Projet-taquin/tree/mas
 
 _Branche Master_
 
-*Abstract :
+[label](https://shields.io/badge/-blueviolet-blueviolet)
+
+*Abstract :*
 
 Dans ce projet, on veut programmer le jeu solitaire du taquin.
 Il s’agit d’un puzzle constitué de 15 carrés numérotés de 1 à 15 qui peuvent coulisser horizontalement et verticalement à l’intérieur d’un cadre carré
 qui contient un emplacement vide. Un carré ne peut coulisser que si l’emplacement voisin dans la direction choisie est vide.
 L’objectif est de déplacer les carrés de manière à obtenir la configuration donnée à la figure 1.
-Pour cela on utilisera une interface graphique.*
+Pour cela on utilisera une interface graphique.
 
 [file:///C:/Users/As33/Desktop/L1%20Bi/Info/Le%20projet/taquin.pdf](url)
 
@@ -71,3 +73,10 @@ Ange : Les cases prennent une couleur chacunne :
 Le bouton AIDE est mis sous une forme plus pertinente pour le joueur :
 
 <img width="97" alt="sigle" src="https://user-images.githubusercontent.com/113627781/230907726-7a2aac9f-c813-49ee-8242-4d0d6db5b4d9.png">
+
+
+https://img.shields.io/static/v1?label=<LABEL>&message=<JEU_DU_TAQUIN>&color=<BLUE>
+
+Sources :
+https://www.freecodecamp.org/french/news/comment-ecrire-un-bon-fichier-readme/
+https://shields.io/

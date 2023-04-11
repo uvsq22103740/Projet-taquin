@@ -27,7 +27,7 @@ def création_de_widgets():
         boutons.append(bouton_ligne)
         """Permet d'affilier ces boutons sur toutes les lignes du 4x4"""
 
-    bouton_sauvegarde = tk.Button(racine, text="Sauvegarder",bg="green3", font=("Rog fonts",7),command=lambda:Sauvegarde_callback())
+    bouton_sauvegarde = tk.Button(racine, text="Sauvegarder",bg="green3", font=("Rog fonts",7),command=lambda:sauvegarde_du_jeu())
     bouton_sauvegarde.grid(row=5, column=1)
     """Création bouton pour sauvegarder le jeu avec la commande sauvegarde_du_jeu"""
 

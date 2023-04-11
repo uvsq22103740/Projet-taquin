@@ -19,21 +19,19 @@ Dans ce projet, on veut programmer le jeu solitaire du taquin.
 Il s’agit d’un puzzle constitué de 15 carrés numérotés de 1 à 15 qui peuvent coulisser horizontalement et verticalement à l’intérieur d’un cadre carré
 qui contient un emplacement vide. Un carré ne peut coulisser que si l’emplacement voisin dans la direction choisie est vide.
 L’objectif est de déplacer les carrés de manière à obtenir la configuration donnée à la figure 1.
-
 Pour cela on utilisera une interface graphique.*
+
+[file:///C:/Users/As33/Desktop/L1%20Bi/Info/Le%20projet/taquin.pdf](url)
 
 Léa : on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique
 
-Ange : Pour commencer, nous avons créer une interface graphique, mais nous nous somme rendu compte qu'il était plus efficace de regrouper les données et des fonctionnalités dans une classe qu'on a nommé "Taquin" en l'honneur de notre petit jeu.
-
-On a regroupé les données et des fonctionnalités dans une classe qu'on a nommé Taquin dans la ligne 3
+Ange : Pour commencer, nous avons créer une interface graphique
 
 Lily : On utilise la méthode init qui est une fonction qui permet d'initialiser les attributs de la classe
 
 Léa : Nous rajoutons le titre du jeu nommé " Jeu du taquin " grace a la fonction title puis nous créeons une grille grace a la fonction "grid" et on lui donne une largeur de 5 et les reliefs.
 
-Ange : ligne 10 on utilise tk.Frame pour crée un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie.
-On apelle en paramètre jeu, pour que le titre du jeu apparaise, "bd" et on donne la largeur de la bordure = 5 pixels ainsi qu'un relief style "raised" pour donner une impression de profondeur, ce qui est plus réaliste!
+Ange : ligne 9 on crée la fonction création_de_widgets pour définir un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie.
 
 Léa : On a ensuite crée une variable " ligne " vide que nous allons par la suite remplir.
 
@@ -43,18 +41,20 @@ Lily : On crée un quadrillage 4x4
 
 Alexandre : Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les informations du jeu par la suite
 
-Ange : Création du bouton à propos avec messagbox et fonction apropos_bouton_callback qui est appelée lorsque le bouton à propos est cliqué
+Ange : Création du bouton à propos avec messagbox et fonction Aide_callback qui est appelée lorsque le bouton AIDE est cliqué
 Ce bouton une fois cliqué, affiche un message informatif sur le jeu pour que le joueur comprenne ce qu'il doit faire.
 
 Ange : Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin
 
-Ange : On veut faire apparaitre les nombres dans le tableau,
+Ange : On veut faire apparaitre les nombres dans le tableau, de manière aléatoire allant de 1 à 16 avec un pas de 1.
 on a créer une fonction complémentaire à tableau_taquin pour cela, la fonction renouvel_tableau qui va mettre dans les cases des nombres format str et dans celle qui a nombre is none, on met un espace "" pour montrer qu'elle est vide
 On donne aussi une Police fun aux nombres pour donner un style à notre jeu!
 
 On crée une fonction bouge_case qui permetra de bouger les cases, on utilise if elif
 
 Ange: Quand le joueur aura réaliser le tableau gagnant [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
+<img width="233" alt="Taquin résolu wikipedia" src="https://user-images.githubusercontent.com/113627781/231073188-5fd56cf4-ffc9-4b95-9d07-5c5a3d220c30.png">
+
 On aura un message pour le joueur gagnant qui lui annonce qu'il a gagné
 
 Ange : Les cases prennent une couleur chacunne : 

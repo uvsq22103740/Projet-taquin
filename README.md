@@ -1,7 +1,5 @@
 # Projet-taquin
 Dans ce projet, on veut programmer le jeu solitaire du taquin.
-https://ecampus.paris-saclay.fr/pluginfile.php/2075710/mod_resource/content/0/taquin.pdf
-
 
 ! Projet accessible par la branche MASTER !
 

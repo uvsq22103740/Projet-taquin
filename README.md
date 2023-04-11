@@ -48,7 +48,7 @@ Ce bouton une fois cliqué, affiche un message informatif sur le jeu pour que le
 
 Ange : Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin
 
-Alexandre: On crée ligne 92 la fonction permettant la sauvegarde du jeu que l'on va affilier au bouton sur l'interface graphique.
+Alexandre: On crée la fonction permettant la sauvegarde du jeu que l'on va affilier au bouton sur l'interface graphique et qui va afficher un message une fois la partie sauvegardée.
 
 Ange : On veut faire apparaitre les nombres dans le tableau, de manière aléatoire allant de 1 à 16 avec un pas de 1.
 on a créer une fonction complémentaire à tableau_taquin pour cela, la fonction renouvel_tableau qui va mettre dans les cases des nombres format str et dans celle qui a nombre is none, on met un espace "" pour montrer qu'elle est vide

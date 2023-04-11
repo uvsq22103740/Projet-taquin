@@ -1,4 +1,5 @@
-# Projet-taquin
+# Projet-taquin!
+[Taquin Game](https://user-images.githubusercontent.com/113627781/231103968-77547549-43eb-4d0e-a82c-80e3259b067e.png)
 BI TD01
 
 SAUVAGE Angélique 22103740
@@ -80,3 +81,4 @@ https://img.shields.io/static/v1?label=<LABEL>&message=<JEU_DU_TAQUIN>&color=<BL
 Sources :
 https://www.freecodecamp.org/french/news/comment-ecrire-un-bon-fichier-readme/
 https://shields.io/
+https://www.canva.com/design/DAFfyFwmz58/vQE6Hf8bZONutXV5sbNC7A/edit?utm_content=DAFfyFwmz58&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton

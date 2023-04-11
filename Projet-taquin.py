@@ -88,8 +88,13 @@ def renouvel_tableau(tableau):
                 """Sinon, on écrit le nombre dans le bouton"""
                 boutons[ligne][colonne].configure(text=str(nombre), font=("Rog fonts",10))
                 """un nombre par case on ajoute ligne au tableau et on met une police fun de taille 20"""
+
 def sauvegarde_du_jeu():
     """Sauvegarde l'état actuel du plateau de jeu dans un fichier binaire appelé save.dat"""
+    with open("save.dat", "wb") as svg:
+        pickle.dump(tableau, svg)
+        """Utilisation du module pickle pour sauvegarder"""
+
 def vérifie_réussite():
         """vérifie si l'enchainement des nombres du tableau est le schéma correct"""
         tableau_réussite = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]

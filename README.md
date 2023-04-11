@@ -37,7 +37,7 @@ Ange : ligne 9 on crée la fonction création_de_widgets pour définir un cadre,
 
 Léa : On a ensuite crée une variable " ligne " vide que nous allons par la suite remplir.
 
-Alexandre: On ajoute sur la ligne 14 une variable permettant de créer les cases vides dans lesquelles nous pourrons stocker les informations du jeu dans le futur.
+Alexandre: On ajoute sur la ligne 13 une variable permettant de créer les cases vides dans lesquelles nous pourrons stocker les informations du jeu dans le futur.
 
 Lily : On crée un quadrillage 4x4
 

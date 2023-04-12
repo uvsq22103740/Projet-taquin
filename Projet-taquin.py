@@ -108,8 +108,6 @@ def chargement_jeu():
         message_erreur="Aucune sauvegarde trouvée."
         print("Erreur", message_erreur)
 
-
-
 def vérifie_réussite():
         """vérifie si l'enchainement des nombres du tableau est le schéma correct"""
         tableau_réussite = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]

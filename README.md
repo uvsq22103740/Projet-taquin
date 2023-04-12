@@ -1,6 +1,5 @@
 # Projet-taquin!
 <img width="250" alt="Taquin Game" src="https://user-images.githubusercontent.com/113627781/231103968-77547549-43eb-4d0e-a82c-80e3259b067e.png">
-[Taquin Game](https://user-images.githubusercontent.com/113627781/231103968-77547549-43eb-4d0e-a82c-80e3259b067e.png)
 
 SAUVAGE Angélique 22103740
 

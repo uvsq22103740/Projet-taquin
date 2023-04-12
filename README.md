@@ -25,8 +25,6 @@ qui contient un emplacement vide. Un carré ne peut coulisser que si l’emplace
 L’objectif est de déplacer les carrés de manière à obtenir la configuration donnée à la figure 1.
 Pour cela on utilisera une interface graphique.
 
-[file:///C:/Users/As33/Desktop/L1%20Bi/Info/Le%20projet/taquin.pdf](url)
-
 Léa : on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique
 
 Ange : Pour commencer, nous avons créer une interface graphique
@@ -49,6 +47,8 @@ Ange : Création du bouton à propos avec messagbox et fonction Aide_callback qu
 Ce bouton une fois cliqué, affiche un message informatif sur le jeu pour que le joueur comprenne ce qu'il doit faire.
 
 Ange : Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin
+
+Alexandre: On crée la fonction permettant la sauvegarde du jeu que l'on va affilier au bouton sur l'interface graphique et qui va afficher un message une fois la partie sauvegardée.
 
 Ange : On veut faire apparaitre les nombres dans le tableau, de manière aléatoire allant de 1 à 16 avec un pas de 1.
 on a créer une fonction complémentaire à tableau_taquin pour cela, la fonction renouvel_tableau qui va mettre dans les cases des nombres format str et dans celle qui a nombre is none, on met un espace "" pour montrer qu'elle est vide

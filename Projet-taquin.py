@@ -27,11 +27,11 @@ def création_de_widgets():
         boutons.append(bouton_ligne)
         """Permet d'affilier ces boutons sur toutes les lignes du 4x4"""
 
-    bouton_sauvegarde = tk.Button(racine, text="Sauvegarder",bg="green3", font=("Rog fonts",7),command=lambda:Sauvegarde_callback())
+    bouton_sauvegarde = tk.Button(racine, text="Sauvegarder",bg="green3", font=("Rog fonts",7),command=lambda:sauvegarde_du_jeu())
     bouton_sauvegarde.grid(row=5, column=1)
     """Création bouton pour sauvegarder le jeu avec la commande sauvegarde_du_jeu"""
 
-    bouton_chargement = tk.Button(racine, text="Charger",bg="grey13", fg="light cyan",font=("Rog fonts",7))
+    bouton_chargement = tk.Button(racine, text="Charger",bg="grey13", fg="light cyan",font=("Rog fonts",7),command=lambda:chargement_jeu())
     bouton_chargement.grid(row=5, column=2)
     """Création bouton pour charger le jeu avec la commande chargement_jeu"""
 
@@ -49,10 +49,6 @@ def Aide_callback():
                 "Ce jeu consiste à trouver une combinaison.\n\n" \
                 "Bonne chance!"
         tk.messagebox.showinfo("Aide", message)
-def Sauvegarde_callback():
-            """Fonction appelée lorsque le bouton "Sauvegarder" est cliqué"""
-            message_SV = "Votre partie est sauvegardée"
-            tk.messagebox.showinfo("Sauvegarde", message_SV)
 
 def tableau_taquin():
     """création du tableau du taquin : va prendre aléatoirement un nombre entre 1 et 16"""
@@ -88,6 +84,31 @@ def renouvel_tableau(tableau):
                 """Sinon, on écrit le nombre dans le bouton"""
                 boutons[ligne][colonne].configure(text=str(nombre), font=("Rog fonts",10))
                 """un nombre par case on ajoute ligne au tableau et on met une police fun de taille 20"""
+
+def sauvegarde_du_jeu():
+    """Sauvegarde l'état actuel du plateau de jeu dans un fichier binaire appelé save.dat"""
+    with open("save.dat", "wb") as svg:
+        pickle.dump(tableau, svg)
+        """Utilisation du module pickle pour sauvegarder"""
+    message_SV = "Votre partie est sauvegardée"
+    tk.messagebox.showinfo("Sauvegarde", message_SV)
+
+def chargement_jeu():
+    """Charge l'état précédemment sauvegardé du plateau de jeu à partir du fichier binaire save.dat"""
+    try:
+        with open("save.dat", "rb") as svg:
+            global tableau
+            tableau = pickle.load(svg)
+            """Utilisation du module pickle pour charger"""
+            renouvel_tableau(tableau)
+        message_CH = "Votre partie est chargée"
+        tk.messagebox.showinfo("Charge", message_CH)
+    except FileNotFoundError:
+        """Si aucun fichier de sauvegarde n'est trouvé, affiche un message à l'utilisateur."""
+        message_erreur="Aucune sauvegarde trouvée."
+        print("Erreur", message_erreur)
+
+
 
 def vérifie_réussite():
         """vérifie si l'enchainement des nombres du tableau est le schéma correct"""

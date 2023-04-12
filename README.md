@@ -1,7 +1,6 @@
 # Projet-taquin!
-[Taquin Game](https://user-images.githubusercontent.com/113627781/231103968-77547549-43eb-4d0e-a82c-80e3259b067e.png)
-
 <img width="250" alt="Taquin Game" src="https://user-images.githubusercontent.com/113627781/231103968-77547549-43eb-4d0e-a82c-80e3259b067e.png">
+[Taquin Game](https://user-images.githubusercontent.com/113627781/231103968-77547549-43eb-4d0e-a82c-80e3259b067e.png)
 
 SAUVAGE Angélique 22103740
 
@@ -14,8 +13,6 @@ GALLOIS Léa       22105352
 Projet du jeu du Taquin : https://github.com/uvsq22103740/Projet-taquin/tree/master
 
 _Branche Master_
-
-[label](https://shields.io/badge/-blueviolet-blueviolet)
 
 *Abstract :*
 
@@ -77,9 +74,8 @@ Le bouton AIDE est mis sous une forme plus pertinente pour le joueur :
 <img width="100" alt="sigle" src="https://user-images.githubusercontent.com/113627781/230907726-7a2aac9f-c813-49ee-8242-4d0d6db5b4d9.png">
 
 
-https://img.shields.io/static/v1?label=<LABEL>&message=<JEU_DU_TAQUIN>&color=<BLUE>
-
 Sources :
-https://www.freecodecamp.org/french/news/comment-ecrire-un-bon-fichier-readme/
-https://shields.io/
-https://www.canva.com/design/DAFfyFwmz58/vQE6Hf8bZONutXV5sbNC7A/edit?utm_content=DAFfyFwmz58&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+-Pour le Readmee : https://www.freecodecamp.org/french/news/comment-ecrire-un-bon-fichier-readme/
+
+-Pour le Logo : https://www.canva.com/design/DAFfyFwmz58/vQE6Hf8bZONutXV5sbNC7A/edit?utm_content=DAFfyFwmz58&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton

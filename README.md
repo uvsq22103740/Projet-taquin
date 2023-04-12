@@ -1,7 +1,7 @@
 # Projet-taquin!
 [Taquin Game](https://user-images.githubusercontent.com/113627781/231103968-77547549-43eb-4d0e-a82c-80e3259b067e.png)
 
-<img width="150" alt="Taquin Game" src="https://user-images.githubusercontent.com/113627781/231103968-77547549-43eb-4d0e-a82c-80e3259b067e.png">
+<img width="250" alt="Taquin Game" src="https://user-images.githubusercontent.com/113627781/231103968-77547549-43eb-4d0e-a82c-80e3259b067e.png">
 
 SAUVAGE Angélique 22103740
 
@@ -64,17 +64,17 @@ On aura un message pour le joueur gagnant qui lui annonce qu'il a gagné
 Ange : Les cases prennent une couleur chacunne : 
 
 1. sauvegarde = Vert
-<img width="74" alt="sauvegarde" src="https://user-images.githubusercontent.com/113627781/230908483-2045a1f9-98f6-4a4f-b00c-e41881e5e751.png">
+<img width="100" alt="sauvegarde" src="https://user-images.githubusercontent.com/113627781/230908483-2045a1f9-98f6-4a4f-b00c-e41881e5e751.png">
 
 2. chargement = Noir
-<img width="50" alt="charge" src="https://user-images.githubusercontent.com/113627781/230908501-f13c70f3-0297-419e-b174-9bbaeb8fdb95.png">
+<img width="100" alt="charge" src="https://user-images.githubusercontent.com/113627781/230908501-f13c70f3-0297-419e-b174-9bbaeb8fdb95.png">
 
 3. Annulation = Rouge orangé
-<img width="49" alt="annulation" src="https://user-images.githubusercontent.com/113627781/230908540-ba57ae6b-9774-4ed8-a499-44dba52c8e65.png">
+<img width="100" alt="annulation" src="https://user-images.githubusercontent.com/113627781/230908540-ba57ae6b-9774-4ed8-a499-44dba52c8e65.png">
 
 Le bouton AIDE est mis sous une forme plus pertinente pour le joueur :
 
-<img width="97" alt="sigle" src="https://user-images.githubusercontent.com/113627781/230907726-7a2aac9f-c813-49ee-8242-4d0d6db5b4d9.png">
+<img width="100" alt="sigle" src="https://user-images.githubusercontent.com/113627781/230907726-7a2aac9f-c813-49ee-8242-4d0d6db5b4d9.png">
 
 
 https://img.shields.io/static/v1?label=<LABEL>&message=<JEU_DU_TAQUIN>&color=<BLUE>

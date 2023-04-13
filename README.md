@@ -72,9 +72,12 @@ Le bouton AIDE est mis sous une forme plus pertinente pour le joueur :
 
 <img width="100" alt="sigle" src="https://user-images.githubusercontent.com/113627781/230907726-7a2aac9f-c813-49ee-8242-4d0d6db5b4d9.png">
 
+Ange : Création d'un compteur de coups!
 
 Sources :
 
 -Pour le Readmee : https://www.freecodecamp.org/french/news/comment-ecrire-un-bon-fichier-readme/
 
 -Pour le Logo : https://www.canva.com/design/DAFfyFwmz58/vQE6Hf8bZONutXV5sbNC7A/edit?utm_content=DAFfyFwmz58&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+- Le cours sur l'interface

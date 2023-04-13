@@ -5,7 +5,9 @@ import random as rd
 """Importer le module random pour générer le plateau aléatoirement"""
 import pickle
 """Importer le module pickle pour sauvegarder et charger le plateau"""
+racine = tk.Tk()
 
+"""Création de la fenêtre racine avec bibliothèque tkinter"""
 def création_de_widgets():
     """Déclarer les variables globales qui seront utilisées dans les fonctions suivantes"""
     global boutons, bouton_sauvegarde, bouton_chargement, bouton_annulation
@@ -35,7 +37,7 @@ def création_de_widgets():
     bouton_chargement.grid(row=5, column=2)
     """Création bouton pour charger le jeu avec la commande chargement_jeu"""
 
-    bouton_annulation = tk.Button(racine, text="Annuler",bg="orange red", font=("Rog fonts",7))
+    bouton_annulation = tk.Button(racine, text="Annuler",bg="orange red", font=("Rog fonts",7), command=dernier_mouvement_annulé)
     bouton_annulation.grid(row=5, column=3)
     """Création bouton pour annuler le dernier mouvement avec la commande dernier_mouvement_annulé"""
 
@@ -108,6 +110,14 @@ def chargement_jeu():
         message_erreur="Aucune sauvegarde trouvée."
         print("Erreur", message_erreur)
 
+def dernier_mouvement_annulé():
+    global tableau, précédent_tableau_existant
+    """Si un état précédent a été enregistré, on le restaure et on met à jour le plateau"""
+    if précédent_tableau_existant is not None:
+        tableau = précédent_tableau_existant
+        renouvel_tableau(tableau)
+        précédent_tableau_existant = None
+
 def vérifie_réussite():
         """vérifie si l'enchainement des nombres du tableau est le schéma correct"""
         tableau_réussite = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
@@ -126,6 +136,10 @@ def bouge_case(ligne, colonne):
     if tableau[ligne][colonne] is None:
         """cette case est la case vide, il n'y a pas de nombre dedans, il n'y a rien à faire"""
         return   
+    
+    précédent_tableau_existant = [ligne[:] for ligne in tableau]
+    """Enregistre l'état actuel du plateau de jeu avant de déplacer une case."""
+
     if ligne > 0 and tableau[ligne-1][colonne] is None:  
             """verifie si la case peut etre bougée vers le HAUT"""
             tableau[ligne-1][colonne], tableau[ligne][colonne] = tableau[ligne][colonne], tableau[ligne-1][colonne]
@@ -145,9 +159,18 @@ def bouge_case(ligne, colonne):
     if vérifie_réussite():
         """Vérifie si le joueur a gagné après avoir déplacé une case. Si oui, affiche un message de victoire"""
         message_du_gagnant()
+    affichage()
 
-racine = tk.Tk()
-"""Création de la fenêtre racine avec bibliothèque tkinter"""
+def affichage():
+    """ Modifie le texte d'un label. """
+    global cpt
+    cpt += 1
+    label.config(text="+ " + str(cpt)+ " coups")
+
+cpt = 0
+label = tk.Label(racine, text="Nombre de coups",padx=20, pady=20, font = ("Rog fonts", "10"),bg="gold",borderwidth=10, relief=tk.RAISED)
+label.grid(row=5, column=6)
+
 racine.title("Jeu du Taquin")
 """On ajoute le titre Jeu du Taquin"""
 création_de_widgets()

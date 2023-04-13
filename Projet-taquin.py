@@ -20,7 +20,7 @@ def création_de_widgets():
         """ on crée la variable "bouton_ligne" vide qui sera ensuite remplie"""
         for colonne in range(4):
             """ Création bouton avec la commande "bouge_case" qui sera appelée avec les paramètres "ligne" et "colonne" pour chaque bouton"""
-            bouton = tk.Button(racine, bg="lemon chiffon", text="", width=9, height=6, command=lambda r=ligne, c=colonne: bouge_case(r, c))
+            bouton = tk.Button(racine, bg="lemon chiffon", text="", width=9, height=6, command=lambda r=ligne, c=colonne: bouge_case(r, c), borderwidth=6, relief=tk.RAISED)
             """Le bouton est placé dans la fenêtre principale à la position [ligne][colonne] (selon les boucles "for" ci-dessus)"""
             bouton.grid(row=ligne, column=colonne)
             """Affiliation des boutons pour les lignes puis les colonnes"""
@@ -29,21 +29,21 @@ def création_de_widgets():
         boutons.append(bouton_ligne)
         """Permet d'affilier ces boutons sur toutes les lignes du 4x4"""
 
-    bouton_sauvegarde = tk.Button(racine, text="Sauvegarder",bg="green3", font=("Rog fonts",7),command=lambda:sauvegarde_du_jeu())
+    bouton_sauvegarde = tk.Button(racine, text="Sauvegarder",bg="green3", font=("Rog fonts",7),command=lambda:sauvegarde_du_jeu(), borderwidth=6, relief=tk.RAISED)
     bouton_sauvegarde.grid(row=5, column=1)
     """Création bouton pour sauvegarder le jeu avec la commande sauvegarde_du_jeu"""
 
-    bouton_chargement = tk.Button(racine, text="Charger",bg="grey13", fg="light cyan",font=("Rog fonts",7),command=lambda:chargement_jeu())
+    bouton_chargement = tk.Button(racine, text="Charger",bg="grey13", fg="light cyan",font=("Rog fonts",7),command=lambda:chargement_jeu(), borderwidth=6, relief=tk.RAISED)
     bouton_chargement.grid(row=5, column=2)
     """Création bouton pour charger le jeu avec la commande chargement_jeu"""
 
-    bouton_annulation = tk.Button(racine, text="Annuler",bg="orange red", font=("Rog fonts",7))
+    bouton_annulation = tk.Button(racine, text="Annuler",bg="orange red", font=("Rog fonts",7),command=dernier_mouvement_annule, borderwidth=6, relief=tk.RAISED)
     bouton_annulation.grid(row=5, column=3)
     """Création bouton pour annuler le dernier mouvement avec la commande dernier_mouvement_annulé"""
 
-    bouton_Aide = tk.Button(text="?",bg="RoyalBlue1",fg="Red2",font=('ROG Fonts', 38), command=lambda:Aide_callback())
+    bouton_Aide = tk.Button(text="?",bg="RoyalBlue1",fg="Red2",font=('ROG Fonts', 38), command=lambda:Aide_callback(),borderwidth=6, relief=tk.RAISED)
     """Création du bouton AIDE """
-    bouton_Aide.grid(row=8, column=10)
+    bouton_Aide.grid(row=3, column=4)
     
 def Aide_callback():
         """Fonction appelée lorsque le bouton "Aide" est cliqué"""
@@ -110,6 +110,15 @@ def chargement_jeu():
         message_erreur="Aucune sauvegarde trouvée."
         print("Erreur", message_erreur)
 
+def dernier_mouvement_annule():
+     """Elle permet de revenir en arrière dans le jeu en restaurant l'état précédent du plateau et elle est appelée lorsque l'utilisateur veut annuler son dernier coup"""
+     global tableau, précédent_tableau_existant
+     """Si un état précédent a été enregistré, on le restaure et on met à jour le plateau """
+     if précédent_tableau_existant is not None:
+          tableau = précédent_tableau_existant
+          renouvel_tableau(tableau)
+          précédent_tableau_existant = None
+
 def vérifie_réussite():
         """vérifie si l'enchainement des nombres du tableau est le schéma correct"""
         tableau_réussite = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
@@ -127,7 +136,11 @@ def bouge_case(ligne, colonne):
     global tableau, précédent_tableau_existant
     if tableau[ligne][colonne] is None:
         """cette case est la case vide, il n'y a pas de nombre dedans, il n'y a rien à faire"""
-        return   
+        return 
+
+    précédent_tableau_existant = [ligne[:] for ligne in tableau]
+    """Enregistre l'état actuel du plateau de jeu avant de déplacer une case"""
+
     if ligne > 0 and tableau[ligne-1][colonne] is None:  
             """verifie si la case peut etre bougée vers le HAUT"""
             tableau[ligne-1][colonne], tableau[ligne][colonne] = tableau[ligne][colonne], tableau[ligne-1][colonne]
@@ -147,17 +160,17 @@ def bouge_case(ligne, colonne):
     if vérifie_réussite():
         """Vérifie si le joueur a gagné après avoir déplacé une case. Si oui, affiche un message de victoire"""
         message_du_gagnant()
-    affichage()
+    affichage_compteur()
 
-def affichage():
-    """ Modifie le texte d'un label. """
+def affichage_compteur():
+    """Modifie le texte du compteur"""
     global cpt
     cpt += 1
-    label.config(text="+ " + str(cpt)+ " coups")
+    bouton_compteur.config(text="+ " + str(cpt)+ " coups")
 
 cpt = 0
-label = tk.Label(racine, text="Nombre de coups",padx=20, pady=20, font = ("Rog fonts", "10"),bg="gold",borderwidth=10, relief=tk.RAISED)
-label.grid(row=5, column=6)
+bouton_compteur = tk.Label(racine, text="Nombre de coups",padx=20, pady=20, font = ("Rog fonts", "10"),bg="gold",borderwidth=6, relief=tk.RAISED)
+bouton_compteur.grid(row=4, column=4)
 
 racine.title("Jeu du Taquin")
 """On ajoute le titre Jeu du Taquin"""

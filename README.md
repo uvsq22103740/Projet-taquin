@@ -73,6 +73,7 @@ Le bouton AIDE est mis sous une forme plus pertinente pour le joueur :
 <img width="100" alt="sigle" src="https://user-images.githubusercontent.com/113627781/230907726-7a2aac9f-c813-49ee-8242-4d0d6db5b4d9.png">
 
 Ange : Création d'un compteur de coups!
+image.png
 
 Sources :
 

@@ -81,7 +81,7 @@ def renouvel_tableau(tableau):
             """Stocke le nombre ou la valeur "None" dans la variable nombre"""
             if nombre is None:
                 """Si "nombre" est "None", effacer le texte du bouton"""
-                boutons[ligne][colonne].configure(text="")
+                boutons[ligne][colonne].configure(text="", font=("Rog fonts",10))
             else:
                 """Sinon, on écrit le nombre dans le bouton"""
                 boutons[ligne][colonne].configure(text=str(nombre), font=("Rog fonts",10))
@@ -118,6 +118,7 @@ def dernier_mouvement_annule():
           tableau = précédent_tableau_existant
           renouvel_tableau(tableau)
           précédent_tableau_existant = None
+          affichage_compteur()
 
 def vérifie_réussite():
         """vérifie si l'enchainement des nombres du tableau est le schéma correct"""
@@ -136,6 +137,7 @@ def bouge_case(ligne, colonne):
     global tableau, précédent_tableau_existant
     if tableau[ligne][colonne] is None:
         """cette case est la case vide, il n'y a pas de nombre dedans, il n'y a rien à faire"""
+        affichage_compteur(None)
         return 
 
     précédent_tableau_existant = [ligne[:] for ligne in tableau]
@@ -167,6 +169,7 @@ def affichage_compteur():
     global cpt
     cpt += 1
     bouton_compteur.config(text="+ " + str(cpt)+ " coups")
+    """Le compteur affiche le nombre de coups"""
 
 cpt = 0
 bouton_compteur = tk.Label(racine, text="Nombre de coups",padx=20, pady=20, font = ("Rog fonts", "10"),bg="gold",borderwidth=6, relief=tk.RAISED)

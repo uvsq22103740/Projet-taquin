@@ -1,9 +1,6 @@
 # Projet-taquin!
 <img width="250" alt="Taquin Game" src="https://user-images.githubusercontent.com/113627781/231962361-ee509987-7a9b-4198-b02b-b8047d13d8ae.png">
 
-![Taquin game uptated](https://user-images.githubusercontent.com/113627781/231962361-ee509987-7a9b-4198-b02b-b8047d13d8ae.png)
-
-
 SAUVAGE Angélique 22103740
 
 ACCES   Alexandre 22205300

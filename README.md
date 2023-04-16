@@ -9,17 +9,23 @@ OUK     Lily      22106262
 
 GALLOIS Léa       22105352
 
-Projet du jeu du Taquin : https://github.com/uvsq22103740/Projet-taquin/tree/master
+[Projet du jeu du Taquin](https://github.com/uvsq22103740/Projet-taquin/tree/master)
 
 _Branche Master_
 
-*Abstract :*
+---
+
+**Abstract**
 
 Dans ce projet, on veut programmer le jeu solitaire du taquin.
 Il s’agit d’un puzzle constitué de 15 carrés numérotés de 1 à 15 qui peuvent coulisser horizontalement et verticalement à l’intérieur d’un cadre carré
 qui contient un emplacement vide. Un carré ne peut coulisser que si l’emplacement voisin dans la direction choisie est vide.
 L’objectif est de déplacer les carrés de manière à obtenir la configuration donnée à la figure 1.
 Pour cela on utilisera une interface graphique.
+
+---
+
+## Notre Jeu :
 
 Léa : on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique
 
@@ -52,37 +58,46 @@ Ange : Notre jeu repose donc sur la fonction création_de_widgets (en plus de ce
 
 - tableau_taquin            :
 
+Ange : Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin
+On veut faire apparaitre les nombres dans le tableau, de manière aléatoire allant de 1 à 16 avec un pas de 1.
+
 - renouvel_tableau          :
+Ange : On a créer une fonction complémentaire à tableau_taquin pour cela, la fonction renouvel_tableau qui va mettre dans les cases des nombres format str et dans celle qui a nombre is none, on met un espace "" pour montrer qu'elle est vide
+On donne aussi une Police fun aux nombres pour donner un style à notre jeu!
 
 - sauvegarde_du_jeu         :
+
+Alexandre: On crée la fonction permettant la sauvegarde du jeu que l'on va affilier au bouton sur l'interface graphique et qui va afficher un message une fois la partie sauvegardée.
 
 - chargement_jeu            :
 
 - dernier_mouvement_annule  :
 
 - vérifie_réussite          :
-
-- message_du_gagnant        :
-
-- bouge_case                :
-
-- affiche_compteur          :
-
-Ange : Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin
-
-Alexandre: On crée la fonction permettant la sauvegarde du jeu que l'on va affilier au bouton sur l'interface graphique et qui va afficher un message une fois la partie sauvegardée.
-
-Ange : On veut faire apparaitre les nombres dans le tableau, de manière aléatoire allant de 1 à 16 avec un pas de 1.
-on a créer une fonction complémentaire à tableau_taquin pour cela, la fonction renouvel_tableau qui va mettre dans les cases des nombres format str et dans celle qui a nombre is none, on met un espace "" pour montrer qu'elle est vide
-On donne aussi une Police fun aux nombres pour donner un style à notre jeu!
-On crée une fonction bouge_case qui permetra de bouger les cases, on utilise if elif
-
 Ange: Quand le joueur aura réaliser le tableau gagnant [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
 <img width="233" alt="Taquin résolu wikipedia" src="https://user-images.githubusercontent.com/113627781/231073188-5fd56cf4-ffc9-4b95-9d07-5c5a3d220c30.png">
 
 On aura un message pour le joueur gagnant qui lui annonce qu'il a gagné
 
-Ange : Les cases prennent une couleur chacunne : 
+- message_du_gagnant        :
+
+
+- bouge_case                :
+
+Ange : On crée une fonction bouge_case qui permetra de bouger les cases, on utilise if elif
+
+- affiche_compteur          :
+Ange : Cette fonction modifie le texte du compteur.
+L'instruction global cpt permet de modifier la variable globale à l'intérieur de la fonction.
+Le compteur affiche le nombre de coups avec la méthode 'config()' (on modifie le paramètre du compteur)
+
+---
+
+## Les couleurs des boutons
+
+Ange : Les cases prennent une couleur chacunne grace aux paramètres de choix de couleurs vu en cours:
+* `fg` (ou `foreground`): couleur du texte
+* `bg` (ou `background`): couleur du fond
 
 1. sauvegarde = Vert
 <img width="100" alt="sauvegarde" src="https://user-images.githubusercontent.com/113627781/230908483-2045a1f9-98f6-4a4f-b00c-e41881e5e751.png">
@@ -104,7 +119,7 @@ Ange : Création d'un compteur de coups!
 Ange : affichage dans la fenetre du logo du jeu _TAQUIN GAME_
 <img width="55" alt="Taquin game uptated 16 32" src="https://user-images.githubusercontent.com/113627781/232315225-2eeec61c-a2d5-46bc-b568-03dfff4996e8.png">
 
-Sources :
+**Sources**
 
 -Pour le Readmee : https://www.freecodecamp.org/french/news/comment-ecrire-un-bon-fichier-readme/
 
@@ -115,3 +130,4 @@ Sources :
 - Le cours sur l'interface graphique "02_gui.ipynb"
 
 - Pour afficher le logo dans la fenetre Tk https://askcodez.com/comment-ajouter-une-image-dans-tkinter.html
+https://pythonpoint.net/how-to-install-pil-in-python/

@@ -15,7 +15,7 @@ _Branche Master_
 
 ---
 
-**Abstract**
+## Abstract
 
 Dans ce projet, on veut programmer le jeu solitaire du taquin.
 Il s’agit d’un puzzle constitué de 15 carrés numérotés de 1 à 15 qui peuvent coulisser horizontalement et verticalement à l’intérieur d’un cadre carré
@@ -27,15 +27,13 @@ Pour cela on utilisera une interface graphique.
 
 ## Notre Jeu :
 
-Léa : on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique
-
-Ange : Pour commencer, nous avons créer une interface graphique
+Léa : Pour commencer on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique
 
 Lily : On utilise la méthode init qui est une fonction qui permet d'initialiser les attributs de la classe
 
-Léa : Nous rajoutons le titre du jeu nommé " Jeu du taquin " grace à title puis nous créeons une grille grace a la fonction "grid" et on lui donne une largeur de 5 et les reliefs.
+Léa : Nous rajoutons le titre du jeu nommé **" Jeu du taquin "** grace à title puis nous créeons une grille grace a "grid" et on lui donne une largeur de 5 et les reliefs.
 
-Ange : ligne 13 on crée la fonction création_de_widgets pour définir un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie.
+Ange : ligne 13 on crée la fonction **création_de_widgets** pour définir un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie.
 
 Léa : On a ensuite crée une variable " ligne " vide que nous allons par la suite remplir.
 
@@ -45,48 +43,51 @@ Lily : On crée un quadrillage 4x4
 
 Alexandre : Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les informations du jeu par la suite
 
-Alexandre : Création du bouton de sauvegarde : bouton_sauvegarde
+Alexandre : Création du bouton de sauvegarde : **bouton_sauvegarde**
 
-Léa : Création du bouton de chargement : bouton_chargement
+Léa : Création du bouton de chargement : **bouton_chargement**
 
-Lily : Création du bouton d'annulation : bouton_annulation
+Lily : Création du bouton d'annulation : **bouton_annulation**
 
-Ange : Création du bouton AIDE : bouton_Aide avec messagbox et fonction Aide_callback qui est appelée lorsque le bouton AIDE est cliqué
+Ange : Création du bouton **AIDE** : **bouton_Aide** avec messagbox et fonction Aide_callback qui est appelée lorsque le bouton AIDE est cliqué
 Ce bouton une fois cliqué, affiche un message informatif sur le jeu pour que le joueur comprenne ce qu'il doit faire.
 
 Ange : Notre jeu repose donc sur la fonction création_de_widgets (en plus de celles des 4 boutons précédents), et sur les 9 fonctions suivantes :
 
-- tableau_taquin            :
+- **tableau_taquin**            :
 
 Ange : Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin
 On veut faire apparaitre les nombres dans le tableau, de manière aléatoire allant de 1 à 16 avec un pas de 1.
 
-- renouvel_tableau          :
+- **renouvel_tableau**          :
 Ange : On a créer une fonction complémentaire à tableau_taquin pour cela, la fonction renouvel_tableau qui va mettre dans les cases des nombres format str et dans celle qui a nombre is none, on met un espace "" pour montrer qu'elle est vide
 On donne aussi une Police fun aux nombres pour donner un style à notre jeu!
 
-- sauvegarde_du_jeu         :
+- **sauvegarde_du_jeu**         :
 
 Alexandre: On crée la fonction permettant la sauvegarde du jeu que l'on va affilier au bouton sur l'interface graphique et qui va afficher un message une fois la partie sauvegardée.
 
-- chargement_jeu            :
+- **chargement_jeu**            :
 
-- dernier_mouvement_annule  :
+- **dernier_mouvement_annule**  :
 
-- vérifie_réussite          :
+- **vérifie_réussite**          :
+
 Ange: Quand le joueur aura réaliser le tableau gagnant [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
+
 <img width="233" alt="Taquin résolu wikipedia" src="https://user-images.githubusercontent.com/113627781/231073188-5fd56cf4-ffc9-4b95-9d07-5c5a3d220c30.png">
 
 On aura un message pour le joueur gagnant qui lui annonce qu'il a gagné
 
-- message_du_gagnant        :
+- **message_du_gagnant**        :
 
 
-- bouge_case                :
+- **bouge_case**                :
 
 Ange : On crée une fonction bouge_case qui permetra de bouger les cases, on utilise if elif
 
-- affiche_compteur          :
+- **affiche_compteur**          :
+
 Ange : Cette fonction modifie le texte du compteur.
 L'instruction global cpt permet de modifier la variable globale à l'intérieur de la fonction.
 Le compteur affiche le nombre de coups avec la méthode 'config()' (on modifie le paramètre du compteur)
@@ -121,7 +122,7 @@ Ange : affichage dans la fenetre du logo du jeu _TAQUIN GAME_
 
 ---
 
-**Sources**
+## Nos Sources
 
 -Pour le Readmee : https://www.freecodecamp.org/french/news/comment-ecrire-un-bon-fichier-readme/
 

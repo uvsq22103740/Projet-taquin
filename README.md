@@ -119,6 +119,8 @@ Ange : Création d'un compteur de coups!
 Ange : affichage dans la fenetre du logo du jeu _TAQUIN GAME_
 <img width="55" alt="Taquin game uptated 16 32" src="https://user-images.githubusercontent.com/113627781/232315225-2eeec61c-a2d5-46bc-b568-03dfff4996e8.png">
 
+---
+
 **Sources**
 
 -Pour le Readmee : https://www.freecodecamp.org/french/news/comment-ecrire-un-bon-fichier-readme/
@@ -130,4 +132,6 @@ Ange : affichage dans la fenetre du logo du jeu _TAQUIN GAME_
 - Le cours sur l'interface graphique "02_gui.ipynb"
 
 - Pour afficher le logo dans la fenetre Tk https://askcodez.com/comment-ajouter-une-image-dans-tkinter.html
-https://pythonpoint.net/how-to-install-pil-in-python/
+https://pythonpoint.net/how-to-install-pil-in-python/!
+
+- Pour le choix des couleurs [Tableau Tkinter color charts .png](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/As33/Desktop/L1%20Bi/Info/S2-python-main/S2-python-main/cours/02_interface_graphique/800px-TkInterColorCharts.png?version%3D1681656888055)

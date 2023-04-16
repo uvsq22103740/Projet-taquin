@@ -1,16 +1,18 @@
 import tkinter as tk
 """Importer le module tkinter, appelé "tk" """
+from PIL import Image, ImageTk 
+"""Importation des modules utiles dans PIL"""
 from tkinter import messagebox
 import random as rd
 """Importer le module random pour générer le plateau aléatoirement"""
 import pickle
 """Importer le module pickle pour sauvegarder et charger le plateau"""
 racine = tk.Tk()
-
 """Création de la fenêtre racine avec bibliothèque tkinter"""
+
 def création_de_widgets():
     """Déclarer les variables globales qui seront utilisées dans les fonctions suivantes"""
-    global boutons, bouton_sauvegarde, bouton_chargement, bouton_annulation
+    global boutons, bouton_sauvegarde, bouton_chargement, bouton_annulation, bouton_oval
     """Création de liste de boutons vides et la stocker dans la variable boutons"""
     boutons=[]
     """Création d'une variable pour des cases vides"""
@@ -44,7 +46,24 @@ def création_de_widgets():
     bouton_Aide = tk.Button(text="?",bg="RoyalBlue1",fg="Red2",font=('ROG Fonts', 38), command=lambda:Aide_callback(),borderwidth=6, relief=tk.RAISED)
     """Création du bouton AIDE """
     bouton_Aide.grid(row=3, column=4)
+
+    HEIGHT = 100
+    WIDTH = 100
+    canvas = tk.Canvas(racine, bg="RoYal blue1", height=HEIGHT, width=WIDTH,borderwidth=0)
+    canvas.grid(row=3, column=8)
+    bouton_oval=canvas.create_oval((100, 80), (4,25), fill="RED", width=1, outline="BLACK")
+    bouton_oval=tk.Button(racine)
     
+    image_Taquin_Game = Image.open("C:\\Users\\As33\\Pictures\\Taquin game uptated 16.32.png")    
+    """Chargement d'une image à partir de PIL"""
+    photo = ImageTk.PhotoImage(image_Taquin_Game)
+    """Création d'une image compatible Tkinter"""
+    Cadre_TG = tk.Label(image=photo)
+    """Insertion de l'image de l"""
+    Cadre_TG.image = photo
+    """Maintient le logo dans un cadre pour pas qu'il disparaisse"""
+    Cadre_TG.grid(row=2,column=4)
+
 def Aide_callback():
         """Fonction appelée lorsque le bouton "Aide" est cliqué"""
         message = "Bienvenue dans le Jeu du Taquin.\n\n" \

@@ -186,6 +186,7 @@ def affichage_compteur():
 
 cpt = 0
 bouton_compteur = tk.Label(racine, text="Nombre de coups",padx=20, pady=20, font = ("Rog fonts", "10"),bg="gold",borderwidth=6, relief=tk.RAISED)
+"""On donne à notre bouton le texte la couleur et police"""
 bouton_compteur.grid(row=4, column=4)
 
 """On ajoute le titre Jeu du Taquin"""

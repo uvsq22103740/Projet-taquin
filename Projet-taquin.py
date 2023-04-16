@@ -9,6 +9,7 @@ import pickle
 """Importer le module pickle pour sauvegarder et charger le plateau"""
 racine = tk.Tk()
 """Création de la fenêtre racine avec bibliothèque tkinter"""
+racine.title("Jeu du Taquin")
 
 def création_de_widgets():
     """Déclarer les variables globales qui seront utilisées dans les fonctions suivantes"""
@@ -187,7 +188,6 @@ cpt = 0
 bouton_compteur = tk.Label(racine, text="Nombre de coups",padx=20, pady=20, font = ("Rog fonts", "10"),bg="gold",borderwidth=6, relief=tk.RAISED)
 bouton_compteur.grid(row=4, column=4)
 
-racine.title("Jeu du Taquin")
 """On ajoute le titre Jeu du Taquin"""
 création_de_widgets()
 """Création des widgets"""

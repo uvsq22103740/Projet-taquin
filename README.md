@@ -27,7 +27,7 @@ Ange : Pour commencer, nous avons créer une interface graphique
 
 Lily : On utilise la méthode init qui est une fonction qui permet d'initialiser les attributs de la classe
 
-Léa : Nous rajoutons le titre du jeu nommé " Jeu du taquin " grace a la fonction title puis nous créeons une grille grace a la fonction "grid" et on lui donne une largeur de 5 et les reliefs.
+Léa : Nous rajoutons le titre du jeu nommé " Jeu du taquin " grace à title puis nous créeons une grille grace a la fonction "grid" et on lui donne une largeur de 5 et les reliefs.
 
 Ange : ligne 13 on crée la fonction création_de_widgets pour définir un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie.
 
@@ -39,8 +39,34 @@ Lily : On crée un quadrillage 4x4
 
 Alexandre : Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les informations du jeu par la suite
 
-Ange : Création du bouton à propos avec messagbox et fonction Aide_callback qui est appelée lorsque le bouton AIDE est cliqué
+Alexandre : Création du bouton de sauvegarde : bouton_sauvegarde
+
+Léa : Création du bouton de chargement : bouton_chargement
+
+Lily : Création du bouton d'annulation : bouton_annulation
+
+Ange : Création du bouton AIDE : bouton_Aide avec messagbox et fonction Aide_callback qui est appelée lorsque le bouton AIDE est cliqué
 Ce bouton une fois cliqué, affiche un message informatif sur le jeu pour que le joueur comprenne ce qu'il doit faire.
+
+Ange : Notre jeu repose donc sur la fonction création_de_widgets (en plus de celles des 4 boutons précédents), et sur les 9 fonctions suivantes :
+
+- tableau_taquin            :
+
+- renouvel_tableau          :
+
+- sauvegarde_du_jeu         :
+
+- chargement_jeu            :
+
+- dernier_mouvement_annule  :
+
+- vérifie_réussite          :
+
+- message_du_gagnant        :
+
+- bouge_case                :
+
+- affiche_compteur          :
 
 Ange : Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin
 

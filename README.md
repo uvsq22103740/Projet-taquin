@@ -29,11 +29,11 @@ Lily : On utilise la méthode init qui est une fonction qui permet d'initialiser
 
 Léa : Nous rajoutons le titre du jeu nommé " Jeu du taquin " grace a la fonction title puis nous créeons une grille grace a la fonction "grid" et on lui donne une largeur de 5 et les reliefs.
 
-Ange : ligne 9 on crée la fonction création_de_widgets pour définir un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie.
+Ange : ligne 13 on crée la fonction création_de_widgets pour définir un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie.
 
 Léa : On a ensuite crée une variable " ligne " vide que nous allons par la suite remplir.
 
-Alexandre: On ajoute sur la ligne 13 une variable permettant de créer les cases vides dans lesquelles nous pourrons stocker les informations du jeu dans le futur.
+Alexandre: On ajoute sur la ligne 17 une variable permettant de créer les cases vides dans lesquelles nous pourrons stocker les informations du jeu dans le futur.
 
 Lily : On crée un quadrillage 4x4
 
@@ -49,7 +49,6 @@ Alexandre: On crée la fonction permettant la sauvegarde du jeu que l'on va affi
 Ange : On veut faire apparaitre les nombres dans le tableau, de manière aléatoire allant de 1 à 16 avec un pas de 1.
 on a créer une fonction complémentaire à tableau_taquin pour cela, la fonction renouvel_tableau qui va mettre dans les cases des nombres format str et dans celle qui a nombre is none, on met un espace "" pour montrer qu'elle est vide
 On donne aussi une Police fun aux nombres pour donner un style à notre jeu!
-
 On crée une fonction bouge_case qui permetra de bouger les cases, on utilise if elif
 
 Ange: Quand le joueur aura réaliser le tableau gagnant [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
@@ -68,7 +67,7 @@ Ange : Les cases prennent une couleur chacunne :
 3. Annulation = Rouge orangé
 <img width="100" alt="annulation" src="https://user-images.githubusercontent.com/113627781/230908540-ba57ae6b-9774-4ed8-a499-44dba52c8e65.png">
 
-Le bouton AIDE est mis sous une forme plus pertinente pour le joueur :
+Ange : Le bouton AIDE est mis sous une forme plus pertinente pour le joueur :
 
 <img width="100" alt="sigle" src="https://user-images.githubusercontent.com/113627781/230907726-7a2aac9f-c813-49ee-8242-4d0d6db5b4d9.png">
 
@@ -77,6 +76,7 @@ Ange : Création d'un compteur de coups!
 <img width="163" alt="image" src="https://user-images.githubusercontent.com/113627781/231862070-b8de8a8e-e554-49a2-acf8-86991dd0ce37.png">
 
 Ange : affichage dans la fenetre du logo du jeu _TAQUIN GAME_
+<img width="55" alt="Taquin game uptated 16 32" src="https://user-images.githubusercontent.com/113627781/232315225-2eeec61c-a2d5-46bc-b568-03dfff4996e8.png">
 
 Sources :
 

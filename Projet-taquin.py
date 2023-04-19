@@ -13,7 +13,7 @@ racine.title("Jeu du Taquin")
 
 def création_de_widgets():
     """Déclarer les variables globales qui seront utilisées dans les fonctions suivantes"""
-    global boutons, bouton_sauvegarde, bouton_chargement, bouton_annulation
+    global boutons, bouton_sauvegarde, bouton_chargement, bouton_annulation, bouton_Aide, bouton_compteur
     """Création de liste de boutons vides et la stocker dans la variable boutons"""
     boutons=[]
     """Création d'une variable pour des cases vides"""
@@ -47,6 +47,10 @@ def création_de_widgets():
     bouton_Aide = tk.Button(text="?",bg="RoyalBlue1",fg="Red2",font=('ROG Fonts', 38), command=lambda:Aide_callback(),borderwidth=6, relief=tk.RAISED)
     """Création du bouton AIDE """
     bouton_Aide.grid(row=3, column=4)
+
+    bouton_compteur = tk.Label(racine, text="Nombre de coups",padx=20, pady=20, font = ("Rog fonts", "10"),bg="gold",borderwidth=6, relief=tk.RAISED)
+    """On donne à notre bouton le texte la couleur et police"""
+    bouton_compteur.grid(row=4, column=4)
     
     image_Taquin_Game = Image.open("C:\\Users\\As33\\Pictures\\Taquin game uptated 16.32.png")    
     """Chargement d'une image à partir de PIL"""
@@ -179,15 +183,12 @@ def bouge_case(ligne, colonne):
 
 def affichage_compteur():
     """Modifie le texte du compteur"""
-    global cpt
+    global cpt, bouton_compteur
     cpt += 1
     bouton_compteur.config(text="+ " + str(cpt)+ " coups")
     """Le compteur affiche le nombre de coups"""
 
 cpt = 0
-bouton_compteur = tk.Label(racine, text="Nombre de coups",padx=20, pady=20, font = ("Rog fonts", "10"),bg="gold",borderwidth=6, relief=tk.RAISED)
-"""On donne à notre bouton le texte la couleur et police"""
-bouton_compteur.grid(row=4, column=4)
 
 """On ajoute le titre Jeu du Taquin"""
 création_de_widgets()

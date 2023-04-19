@@ -71,6 +71,8 @@ Alexandre: On crée la fonction permettant la sauvegarde du jeu que l'on va affi
 
 - **dernier_mouvement_annule**  :
 
+Lily : Pour annuler un déplacement, on a crée une fonction qui va annuler le dernier mouvement effectué, ainsi le jeu va afficher la grille obtenue avant celui-ci. Cette fonction est associée au bouton annulation.
+
 - **vérifie_réussite**          :
 
 Ange: Quand le joueur aura réaliser le tableau gagnant [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]

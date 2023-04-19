@@ -73,16 +73,18 @@ Alexandre: On crée la fonction permettant la sauvegarde du jeu que l'on va affi
 
 Lily : Pour annuler un déplacement, on a crée une fonction qui va annuler le dernier mouvement effectué, ainsi le jeu va afficher la grille obtenue avant celui-ci. Cette fonction est associée au bouton annulation.
 
-- **vérifie_réussite**          :
+- **vérifie_réussite**  
 
-Ange: Quand le joueur aura réaliser le tableau gagnant [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
+Lily : On crée une fonction qui va vérifier la combinaison gagnante suivante : [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
+La combinaison gagnante correspond à l'emplacement des cases sur l'image suivante : 
 
 <img width="233" alt="Taquin résolu wikipedia" src="https://user-images.githubusercontent.com/113627781/231073188-5fd56cf4-ffc9-4b95-9d07-5c5a3d220c30.png">
 
-On aura un message pour le joueur gagnant qui lui annonce qu'il a gagné
+Un message va s'afficher pour le joueur gagnant
 
 - **message_du_gagnant**        :
 
+Lily : On crée un message qui s'affiche lorsque le jeu est gagné : "Victoire !!!", "Félicitation tu es gagnant !" 
 
 - **bouge_case**                :
 

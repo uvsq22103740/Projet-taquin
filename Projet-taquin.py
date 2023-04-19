@@ -137,17 +137,6 @@ def dernier_mouvement_annule():
           précédent_tableau_existant = None
           affichage_compteur()
 
-def vérifie_réussite():
-        """vérifie si l'enchainement des nombres du tableau est le schéma correct"""
-        tableau_réussite = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, None]]
-        return tableau == tableau_réussite
-
-def message_du_gagnant():
-    """Fonction qui affichera le message de victoire au joueur gagnant"""
-    message_gagnant="Victoire!!!\n\n" \
-                    "Félicitation tu es gagnant!"
-    tk.messagebox.showinfo("Fin du jeu du Taquin", message_gagnant)
-    """On réutilise la bibliothèque tkinter avec massagebox pour le message"""
 
 def bouge_case(ligne, colonne):
     """Déplace une case donnée par ses coordonnées (ligne, colonne) vers une case vide à coté"""
@@ -176,9 +165,7 @@ def bouge_case(ligne, colonne):
             """verifie si la case peut etre bougée vers la DROITE"""
             tableau[ligne][colonne+1], tableau[ligne][colonne] = tableau[ligne][colonne], tableau[ligne][colonne+1]
             renouvel_tableau(tableau)
-    if vérifie_réussite():
-        """Vérifie si le joueur a gagné après avoir déplacé une case. Si oui, affiche un message de victoire"""
-        message_du_gagnant()
+
     affichage_compteur()
 
 def affichage_compteur():

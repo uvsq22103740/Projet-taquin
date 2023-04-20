@@ -27,7 +27,7 @@ Pour cela on utilisera une interface graphique.
 
 ## Notre Jeu :
 
-Léa : Pour commencer on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique
+Léa : Pour commencer on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique 
 
 Lily : On utilise la méthode init qui est une fonction qui permet d'initialiser les attributs de la classe
 
@@ -45,7 +45,7 @@ Alexandre : Dans ce quadrillage on va paramétrer chaque bouton dans lesquels no
 
 Alexandre : Création du bouton de sauvegarde : **bouton_sauvegarde**
 
-Léa : Création du bouton de chargement : **bouton_chargement**
+Léa : Création du bouton de chargement : **bouton_chargement**, ce bouton nous permet de charger l'état précédemment sauvegardé du plateau de jeu.
 
 Lily : Création du bouton d'annulation : **bouton_annulation**
 
@@ -69,6 +69,9 @@ Alexandre: On crée la fonction permettant la sauvegarde du jeu que l'on va affi
 
 - **chargement_jeu**            :
 
+Léa :  Pour pouvoir jouer une partie et retrouver l'état, le placement, de la partie chargé précédament, nous avons crée le bouton chargement du jeu : lorsque la partie est chargée, un message s'affiche à l'utilisateur : "Votre partie est chargée" et ainsi il retrouve l'état des cases au moment du chargement.
+A l'inverse, si aucun fichier de sauvegarde n'est trouvé, un message s'affiche à l'utilisateur : "Aucune sauvegarde trouvée."
+
 - **dernier_mouvement_annule**  :
 
 Lily : Pour annuler un déplacement, on a crée une fonction qui va annuler le dernier mouvement effectué, ainsi le jeu va afficher la grille obtenue avant celui-ci. Cette fonction est associée au bouton annulation.
@@ -80,7 +83,7 @@ La combinaison gagnante correspond à l'emplacement des cases sur l'image suivan
 
 <img width="233" alt="Taquin résolu wikipedia" src="https://user-images.githubusercontent.com/113627781/231073188-5fd56cf4-ffc9-4b95-9d07-5c5a3d220c30.png">
 
-Un message va s'afficher pour le joueur gagnant
+Un message va s'afficher pour le joueur gagnant 
 
 - **message_du_gagnant**        :
 

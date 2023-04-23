@@ -142,13 +142,18 @@ def chargement_jeu():
         print("Erreur", message_erreur)
 
 def dernier_mouvement_annule():
-     """Elle permet de revenir en arrière dans le jeu en restaurant l'état précédent du plateau et elle est appelée lorsque l'utilisateur veut annuler son dernier coup"""
+     """Elle permet de revenir en arrière dans le jeu en restaurant l'état précédent du plateau
+        et elle est appelée lorsque l'utilisateur veut annuler son dernier coup"""
      global tableau, précédent_tableau_existant
-     """Si un état précédent a été enregistré, on le restaure et on met à jour le plateau """
+     """On utilise global pour informer qu'on utilise la variable tableau qui est définie à l'extérieur de la fonction """
      if précédent_tableau_existant is not None:
+          """Si un état précédent a été enregistré, on le restaure et on met à jour le plateau """
           tableau = précédent_tableau_existant
+          """Alors notre grille actuelle devient celle précédente"""
           renouvel_tableau(tableau)
+          """On met à jour le tableau"""
           précédent_tableau_existant = None
+          """La variable devient None car on a fini notre action d'annulation et la condition peut s'arreter"""
           affichage_compteur()
 
 def vérifie_réussite():
@@ -162,7 +167,7 @@ def message_du_gagnant():
     message_gagnant="Victoire!!!\n\n" \
                     "Félicitation tu es gagnant!"
     tk.messagebox.showinfo("Fin du jeu du Taquin", message_gagnant)
-    """On réutilise la bibliothèque tkinter avec massagebox pour le message"""
+    """On réutilise la bibliothèque tkinter avec messagebox pour le message"""
 
 def bouge_case(ligne, colonne):
     """Déplace une case donnée par ses coordonnées (ligne, colonne) vers une case vide à coté"""
@@ -173,7 +178,7 @@ def bouge_case(ligne, colonne):
         return 
 
     précédent_tableau_existant = [ligne[:] for ligne in tableau]
-    """Enregistre l'état actuel du plateau de jeu avant de déplacer une case"""
+    """Stock l'état actuel du plateau de jeu avant de déplacer une case dans une variable"""
 
     if ligne > 0 and tableau[ligne-1][colonne] is None:  
             """verifie si la case peut etre bougée vers le HAUT"""
@@ -192,8 +197,9 @@ def bouge_case(ligne, colonne):
             tableau[ligne][colonne+1], tableau[ligne][colonne] = tableau[ligne][colonne], tableau[ligne][colonne+1]
             renouvel_tableau(tableau)
     if vérifie_réussite():
-        """On vérifie si le joueur a gagné après avoir déplacé une case. Si oui, on affiche un message de victoire"""
+        """On vérifie si le joueur a gagné après avoir déplacé une case"""
         message_du_gagnant()
+        """Si oui, on affiche le message de victoire"""
     affichage_compteur()
 
 def affichage_compteur():

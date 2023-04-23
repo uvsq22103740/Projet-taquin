@@ -7,13 +7,22 @@ import random as rd
 """Importer le module random pour générer le plateau aléatoirement"""
 import pickle
 """Importer le module pickle pour sauvegarder et charger le plateau"""
+import requests
+"""Pour télecharger une image à partir d'une URL"""
+from io import BytesIO
+"""BytesIO du module io sert à mettre l'image en des données binaires"""
 racine = tk.Tk()
 """Création de la fenêtre racine avec bibliothèque tkinter"""
 racine.title("Jeu du Taquin")
 
+url = "https://user-images.githubusercontent.com/113627781/233841485-eb43ade1-f791-4494-b110-3d475082284a.png"
+"URL du logo Taquin GAME =TG"
+TG = requests.get(url)
+"""image télechargée avec requests sous TG"""
+
 def création_de_widgets():
     """Déclarer les variables globales qui seront utilisées dans les fonctions suivantes"""
-    global boutons, bouton_sauvegarde, bouton_chargement, bouton_annulation, bouton_Aide, bouton_compteur, cr
+    global boutons, bouton_sauvegarde, bouton_chargement, bouton_annulation, bouton_Aide, bouton_compteur, cr, image_Taquin_Game
     """Création de liste de boutons vides et la stocker dans la variable boutons"""
     boutons=[]
     """Création d'une variable pour des cases vides"""
@@ -55,16 +64,17 @@ def création_de_widgets():
     cr = tk.Label(racine, text="",padx=40, pady=20, font = ("Rog fonts", "20"),bg="gold",fg="Red",borderwidth=6, relief=tk.RAISED)
     """création  compte à rebours"""
     cr.grid(row=1, column=6)
-    
-    image_Taquin_Game = Image.open("C:\\Users\\As33\\Pictures\\Taquin game uptated 16.32.png")    
-    """Chargement d'une image à partir de PIL"""
-    photo = ImageTk.PhotoImage(image_Taquin_Game)
+
+    image_Taquin_Game = Image.open(BytesIO(TG.content))
+    """Chargement d'une image à partir de PIL de BytesIO"""
+    photo=ImageTk.PhotoImage(image_Taquin_Game)
     """Création d'une image compatible Tkinter"""
-    Cadre_TG = tk.Label(image=photo)
-    """Insertion de l'image de l"""
-    Cadre_TG.image = photo
+    Cadre_TG=tk.Label(image=photo)
+    """Insertion de l'image de logo Taquin GAME"""
+    Cadre_TG.image=photo
     """Maintient le logo dans un cadre pour pas qu'il disparaisse"""
     Cadre_TG.grid(row=1,column=4)
+    """le logo est placé dans la grille par les coordonnées suivantes : row=1,column=4"""
 
 def Aide_callback():
         """Fonction appelée lorsque le bouton "Aide" est cliqué"""

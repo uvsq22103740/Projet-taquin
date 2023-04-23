@@ -29,6 +29,10 @@ Pour cela on utilisera une interface graphique.
 
 Léa : Pour commencer on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique 
 
+Angélique : On importe les bibliothèques Random, Image, ImageTk, Requests, pickele, BytesIO
+
+Angélique : On donne URL du logo de notre jeu
+
 Angélique : Notre code est composé de 12 fonctions que nous allons expliquer dans ce _Readmee_
 
 Lily : On utilise la méthode init qui est une fonction qui permet d'initialiser les attributs de la classe
@@ -139,6 +143,13 @@ Angélique : Création d'un compteur de temps (CR en ms):
 
 Angélique : affichage dans la fenetre du logo du jeu _TAQUIN GAME_
 <img width="55" alt="Taquin game uptated 16 32" src="https://user-images.githubusercontent.com/113627781/232315225-2eeec61c-a2d5-46bc-b568-03dfff4996e8.png">
+On utilise l'url, tout le monde peut trouver l'image par ce lien!
+On charge l'image à partir de PIL de BytesIO.
+On crée une image compatible Tkinter.
+On insert l'image de logo Taquin GAME.
+On maintient le logo dans un cadre pour pas qu'il disparaisse (cadre_TG) puis le logo est placé dans la grille par les coordonnées suivantes : row=1,column=4  
+[Logo Taquin GAME](https://user-images.githubusercontent.com/113627781/232315225-2eeec61c-a2d5-46bc-b568-03dfff4996e8.png)
+
 
 ---
 

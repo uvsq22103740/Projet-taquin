@@ -29,11 +29,13 @@ Pour cela on utilisera une interface graphique.
 
 Léa : Pour commencer on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique 
 
+Angélique : Notre code est composé de 12 fonctions que nous allons expliquer dans ce _Readmee_
+
 Lily : On utilise la méthode init qui est une fonction qui permet d'initialiser les attributs de la classe
 
 Léa : Nous rajoutons le titre du jeu nommé **" Jeu du taquin "** grace à title puis nous créeons une grille grace a "grid" et on lui donne une largeur de 5 et les reliefs.
 
-Angélique : ligne 13 on crée la fonction **création_de_widgets** pour définir un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie.
+Angélique : ligne 14 on crée la fonction **création_de_widgets** pour définir un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie, selon le modèle du jeu du Taquin.
 
 Léa : On a ensuite crée une variable " ligne " vide que nous allons par la suite remplir.
 
@@ -101,7 +103,7 @@ Angélique : Cette fonction modifie le texte du compteur.
 L'instruction global cpt permet de modifier la variable globale à l'intérieur de la fonction.
 Le compteur affiche le nombre de coups avec la méthode 'config()' (on modifie le paramètre du compteur)
 
-- **affichage_compte_à_rebours**:
+- **affichage_compte_à_rebours** :
 
 Angélique : Cette fonction modifie le texte du label cr et donne le temps depuis le lancement du jeu.
 Le compte à rebours affiche le temps avec la méthode 'config()' : 1000 est la durée en ms avant d'appeler la fonction affichage_compte_à_rebours.
@@ -131,6 +133,10 @@ Angélique : Création d'un compteur de coups!
 
 <img width="163" alt="image" src="https://user-images.githubusercontent.com/113627781/231862070-b8de8a8e-e554-49a2-acf8-86991dd0ce37.png">
 
+Angélique : Création d'un compteur de temps (CR en ms):
+
+<img width="287" alt="Taquin CR" src="https://user-images.githubusercontent.com/113627781/233839447-eea9df09-4f35-4c45-9839-b3b533859278.png">
+
 Angélique : affichage dans la fenetre du logo du jeu _TAQUIN GAME_
 <img width="55" alt="Taquin game uptated 16 32" src="https://user-images.githubusercontent.com/113627781/232315225-2eeec61c-a2d5-46bc-b568-03dfff4996e8.png">
 
@@ -151,6 +157,7 @@ https://pythonpoint.net/how-to-install-pil-in-python/!
 
 - Pour le choix des couleurs
 
-![](800px-TkInterColorCharts.png)
+Tableau Tkinter des couleurs ![800px-TkInterColorCharts](https://user-images.githubusercontent.com/113627781/233839713-152a9549-2bf6-44ad-b83d-e37f19252299.png)
+
 
 Extrait de `http://stackoverflow.com/questions/4969543/colour-chart-for-tkinter-and-tix-using-python`

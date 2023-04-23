@@ -31,6 +31,8 @@ Léa : Pour commencer on importe la bibliothèque tkinter vu en cours permettant
 
 Angélique : Notre code est composé de 12 fonctions que nous allons expliquer dans ce _Readmee_
 
+Lily : On importe la bibliothèque random
+
 Léa : Nous rajoutons le titre du jeu nommé **" Jeu du taquin "** grace à title puis nous créeons une grille grace a "grid" et on lui donne une largeur de 5 et les reliefs.
 
 Angélique : ligne 14 on crée la fonction **création_de_widgets** pour définir un cadre, dans lequel on regroupera une grille et des bouttons pour faire le socle sur lequel le joueur fera sa partie, selon le modèle du jeu du Taquin.

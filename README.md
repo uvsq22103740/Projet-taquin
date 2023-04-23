@@ -29,9 +29,9 @@ Pour cela on utilisera une interface graphique.
 
 Léa : Pour commencer on importe la bibliothèque tkinter vu en cours permettant de générer notre interface graphique 
 
-Angélique : Notre code est composé de 12 fonctions que nous allons expliquer dans ce _Readmee_
+Lily : On importe la bibliothèque random
 
-Lily : On utilise la méthode init qui est une fonction qui permet d'initialiser les attributs de la classe
+Angélique : Notre code est composé de 12 fonctions que nous allons expliquer dans ce _Readmee_
 
 Léa : Nous rajoutons le titre du jeu nommé **" Jeu du taquin "** grace à title puis nous créeons une grille grace a "grid" et on lui donne une largeur de 5 et les reliefs.
 
@@ -41,7 +41,8 @@ Léa : On a ensuite crée une variable " ligne " vide que nous allons par la sui
 
 Alexandre: On ajoute sur la ligne 17 une variable permettant de créer les cases vides dans lesquelles nous pourrons stocker les informations du jeu dans le futur.
 
-Lily : On crée un quadrillage 4x4
+Lily : On crée un quadrillage 4x4 qui est la base de la grille du jeu du taquin dans lequel on va stocker
+les chiffres allant de 1 à 15 et une case "vide"
 
 Alexandre : Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les informations du jeu par la suite
 
@@ -49,7 +50,8 @@ Alexandre : Création du bouton de sauvegarde : **bouton_sauvegarde**
 
 Léa : Création du bouton de chargement : **bouton_chargement**, ce bouton nous permet de charger l'état précédemment sauvegardé du plateau de jeu.
 
-Lily : Création du bouton d'annulation : **bouton_annulation**
+Lily : Création du bouton d'annulation : **bouton_annulation** Le bouton annulation va permettre d'annuler le dernier déplacement de
+case fait par l'utilisateur
 
 Angélique : Création du bouton **AIDE** : 
 **bouton_Aide** avec messagbox et fonction Aide_callback qui est appelée lorsque le bouton AIDE est cliqué
@@ -61,6 +63,9 @@ Angélique : Notre jeu repose donc sur la fonction création_de_widgets (en plus
 
 Angélique : Création de la fonction tableau taquin, on va créer ensuite une fonction qui permetera de mettre les nombre de cette fonction dans les cases du tableau taquin
 On veut faire apparaitre les nombres dans le tableau, de manière aléatoire allant de 1 à 16 avec un pas de 1.
+
+Lily : Pour cela on va utiliser shuffle qui va nous permettre de générer une grille aléatoire 
+puis append(None) pour ajouter la dernière case vide à la fin
 
 - **renouvel_tableau**          :
 
@@ -78,7 +83,10 @@ A l'inverse, si aucun fichier de sauvegarde n'est trouvé, un message s'affiche 
 
 - **dernier_mouvement_annule**  :
 
-Lily : Pour annuler un déplacement, on a crée une fonction qui va annuler le dernier mouvement effectué, ainsi le jeu va afficher la grille obtenue avant celui-ci. Cette fonction est associée au bouton annulation.
+Lily : Pour annuler un déplacement, on a crée une fonction qui lorsqu'elle est appelée, va vérifier si la grille a subi un
+changement, si oui, alors la variable tableau devient la variable : précédent_tableau_existant, qui correspond à la grille enregistrée
+avant le déplacement.
+ainsi le jeu va afficher la grille obtenue avant celui-ci. Cette fonction est associée au bouton annulation.
 
 - **vérifie_réussite**  
 
@@ -92,16 +100,25 @@ Un message va s'afficher pour le joueur gagnant
 - **message_du_gagnant**        :
 
 Lily : On crée un message qui s'affiche lorsque le jeu est gagné : "Victoire !!!", "Félicitation tu es gagnant !" 
+On utilise la bibliothèque tkinter avec messagebox
 
 - **bouge_case**                :
 
+Lily : En premier on stock l'état actuel de la grille dans la variable : 
+précédent_tableau_existant
+
 Angélique : On crée une fonction bouge_case qui permetra de bouger les cases, on utilise if elif
+
+Lily : Pour finir on fait appel à la fonction vérifie_réussite pour vérifier si le joueur a gagné, 
+si oui, on fait appel à la fonction message_du_gagnant 
 
 - **affiche_compteur**          :
 
 Angélique : Cette fonction modifie le texte du compteur.
 L'instruction global cpt permet de modifier la variable globale à l'intérieur de la fonction.
 Le compteur affiche le nombre de coups avec la méthode 'config()' (on modifie le paramètre du compteur)
+
+Lily : Cette fonction est appelée lorsqu'un déplacement est annulé
 
 - **affichage_compte_à_rebours** :
 

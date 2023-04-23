@@ -13,7 +13,7 @@ racine.title("Jeu du Taquin")
 
 def création_de_widgets():
     """Déclarer les variables globales qui seront utilisées dans les fonctions suivantes"""
-    global boutons, bouton_sauvegarde, bouton_chargement, bouton_annulation, bouton_Aide, bouton_compteur
+    global boutons, bouton_sauvegarde, bouton_chargement, bouton_annulation, bouton_Aide, bouton_compteur, cr
     """Création de liste de boutons vides et la stocker dans la variable boutons"""
     boutons=[]
     """Création d'une variable pour des cases vides"""
@@ -51,6 +51,10 @@ def création_de_widgets():
     bouton_compteur = tk.Label(racine, text="Nombre de coups",padx=20, pady=20, font = ("Rog fonts", "10"),bg="gold",borderwidth=6, relief=tk.RAISED)
     """On donne à notre bouton le texte la couleur et police"""
     bouton_compteur.grid(row=4, column=4)
+
+    cr = tk.Label(racine, text="",padx=40, pady=20, font = ("Rog fonts", "20"),bg="gold",fg="Red",borderwidth=6, relief=tk.RAISED)
+    """création  compte à rebours"""
+    cr.grid(row=1, column=6)
     
     image_Taquin_Game = Image.open("C:\\Users\\As33\\Pictures\\Taquin game uptated 16.32.png")    
     """Chargement d'une image à partir de PIL"""
@@ -190,10 +194,19 @@ def affichage_compteur():
     """Le compteur affiche le nombre de coups"""
 
 cpt = 0
+cpt2 = 0
+
+def affichage_compte_à_rebours():
+    global cpt2, cr
+    cpt2 += 1
+    racine.after(1000, affichage_compte_à_rebours)
+    """1000 est la durée en ms avant d'appeler la fonction affichage_compte_à_rebours"""
+    cr.config(text= str(cpt2))
 
 """On ajoute le titre Jeu du Taquin"""
 création_de_widgets()
 """Création des widgets"""
+affichage_compte_à_rebours()
 tableau = tableau_taquin()
 """Génération du plateau de jeu"""
 racine.configure(bg="RoyalBlue1")

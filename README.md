@@ -174,8 +174,11 @@ On maintient le logo dans un cadre pour pas qu'il disparaisse (cadre_TG) puis le
 
 - Le cours sur l'interface graphique "02_gui.ipynb"
 
-- Pour afficher le logo dans la fenetre Tk https://askcodez.com/comment-ajouter-une-image-dans-tkinter.html
-https://pythonpoint.net/how-to-install-pil-in-python/!
+- Pour afficher le logo dans la fenetre :
+    - Tk https://askcodez.com/comment-ajouter-une-image-dans-tkinter.html
+    - https://pythonpoint.net/how-to-install-pil-in-python/!
+    - https://openclassrooms.com/forum/sujet/ajouter-une-image-a-mon-repertoire-sur-github
+    - https://www.delftstack.com/fr/howto/python/python-display-image/
 
 - Pour le choix des couleurs
 

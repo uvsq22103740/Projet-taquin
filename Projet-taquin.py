@@ -78,7 +78,7 @@ def création_de_widgets():
 
 def Aide_callback():
         """Fonction appelée lorsque le bouton "Aide" est cliqué"""
-        message = "Bienvenue dans le Jeu du Taquin.\n\n" \
+        message = "Bienvenue dans le Jeu du Taquin.🙂\n\n" \
                 "Ce jeu consiste à trouver une combinaison.\n\n" \
                 "Bonne chance!"
         tk.messagebox.showinfo("Aide", message)

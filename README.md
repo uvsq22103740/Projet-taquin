@@ -44,7 +44,7 @@ Alexandre: On ajoute sur la ligne 17 une variable permettant de créer les cases
 Lily : On crée un quadrillage 4x4 qui est la base de la grille du jeu du taquin dans lequel on va stocker
 les chiffres allant de 1 à 15 et une case "vide"
 
-Alexandre : Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les informations du jeu par la suite
+Alexandre : Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les nombres afin de les convertir en format string donc caractère afin de les afficher dans les boutons paramètrer ci-dessus.
 
 Alexandre : Création du bouton de sauvegarde : **bouton_sauvegarde**, le bouton sauvegarder qui va s'afficher va permettre de sauvegarder d'état actuel du plateau de jeu afin de pouvoir partir et reprendre le jeu ultérieuremnt si nécessaire.
 

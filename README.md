@@ -74,7 +74,7 @@ On donne aussi une Police fun aux nombres pour donner un style à notre jeu!
 
 - **sauvegarde_du_jeu**         :
 
-Alexandre: On crée la fonction permettant la sauvegarde du jeu que l'on va affilier au bouton sur l'interface graphique et qui va afficher un message une fois la partie sauvegardée.
+Alexandre: On crée la fonction permettant la sauvegarde du jeu en sauvegardant l'état actuel des cases que l'on va pouvoir réappeller grâce à la fonction charger, de plus,on va l'affilier au bouton sur l'interface graphique et une fois que la partie sera sauvegarder nous allons recevoir un message pour nous informer que la partie vient d'être sauvegardée.
 
 - **chargement_jeu**            :
 

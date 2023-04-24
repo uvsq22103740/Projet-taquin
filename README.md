@@ -110,6 +110,7 @@ précédent_tableau_existant
 Angélique : On crée une fonction bouge_case qui permetra de bouger les cases, on utilise if elif
 
 Alexandre: Pour bouger a GAUCHE: on vérifie si la colonne actuelle est supérieure à 0 (donc qu'il y a une colonne précédente) et si la case située à gauche est vide(None), ensuite nous inversons la valeur entre ces deux cases afin de déplacer le contenue de la variable de la droite vers la gauche.
+        Pour bouger a DROITE: on vérifie si la colonne actuelle est inférieure à 3 (donc qu'il y a une colonne suivante) et si la case situé à droite est vide(None)., par la suite, nous inversons la valeur entre ces deux cases afin de déplacer le contenue de la variable de la gauche vers la droite.
 
 Lily : Pour finir on fait appel à la fonction vérifie_réussite pour vérifier si le joueur a gagné, 
 si oui, on fait appel à la fonction message_du_gagnant 

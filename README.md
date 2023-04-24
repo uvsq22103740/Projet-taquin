@@ -46,7 +46,7 @@ les chiffres allant de 1 à 15 et une case "vide"
 
 Alexandre : Dans ce quadrillage on va paramétrer chaque bouton dans lesquels nous allons stocker les informations du jeu par la suite
 
-Alexandre : Création du bouton de sauvegarde : **bouton_sauvegarde**
+Alexandre : Création du bouton de sauvegarde : **bouton_sauvegarde**, le bouton sauvegarder qui va s'afficher va permettre de sauvegarder d'état actuel du plateau de jeu afin de pouvoir partir et reprendre le jeu ultérieuremnt si nécessaire.
 
 Léa : Création du bouton de chargement : **bouton_chargement**, ce bouton nous permet de charger l'état précédemment sauvegardé du plateau de jeu.
 

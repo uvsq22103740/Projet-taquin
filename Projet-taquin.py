@@ -6,7 +6,7 @@ from tkinter import messagebox
 import random as rd
 """Importer le module random pour générer le plateau aléatoirement"""
 import pickle
-"""Importer le module pickle pour sauvegarder et charger le plateau"""
+"""Importer le module pickle pour sauvegarder et charger le plateau, cette bibliothèque permet d'enregistrer des objets python sous un format binaire"""
 import requests
 """Pour télecharger une image à partir d'une URL"""
 from io import BytesIO

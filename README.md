@@ -1,13 +1,10 @@
 # Projet-taquin!
 <img width="250" alt="Taquin Game" src="https://user-images.githubusercontent.com/113627781/231962361-ee509987-7a9b-4198-b02b-b8047d13d8ae.png">
 
-SAUVAGE Angélique 22103740
-
-ACCES   Alexandre 22205300
-
-OUK     Lily      22106262
-
-GALLOIS Léa       22105352
+-
+-
+-
+-
 
 [Projet du jeu du Taquin](https://github.com/uvsq22103740/Projet-taquin/tree/master)
 

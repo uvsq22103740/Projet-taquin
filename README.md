@@ -8,3 +8,11 @@ Dans ce projet, on veut programmer le jeu solitaire du taquin.
 ![panneau attention](https://user-images.githubusercontent.com/113627781/230916805-ac868806-730b-4aa2-8cb0-ce329467db67.gif)
 
 Taquin Game
+
+- SAUVAGE Angélique 22103740
+
+- ACCES Alexandre 22205300
+
+- OUK Lily 22106262
+
+- GALLOIS Léa 22105352
